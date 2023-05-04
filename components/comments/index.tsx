@@ -34,7 +34,7 @@ export default function Comments() {
   };
 
   return (
-    <section className="pl-4 pr-1 pb-4 pt-12 flex flex-col items-start justify-center gap-2 bg-gradient-to-b from-gray-100 to-white shadow-lg">
+    <section className="row-span-3 pl-4 pr-1 flex flex-col items-start justify-center gap-2 bg-gradient-to-b from-gray-100 to-white shadow-lg">
       <div className="ml-2">
         <h2 className="text-xl font-bold underline">Deixe um comentário!</h2>
         <p className="text-sm italic font-semibold indent-2">*Leio todos</p>
@@ -42,7 +42,7 @@ export default function Comments() {
       <p className="text-sm mb-4">
         Deixe-me sugestões, dicas, stacks e tecnologias úteis, enfim,{" "}
         <span className="font-semibold underline">qualquer coisa!!</span>{" "}
-        &#128518; rs... Por favor, irá me ajudar no meu desenvolvimento.
+        &#128518; rs... Por favor, gostaria muito de saber a sua opinião.
       </p>
       <form
         onSubmit={handleSubmit}
@@ -77,9 +77,9 @@ export default function Comments() {
         </div>
         <button
           type="submit"
-          className="rounded-md py-2 px-4 bg-blue-700 text-white font-semibold hover:text-lg hover:bg-blue-800 hover:underline transition-all"
+          className="rounded-md py-2 px-4 bg-blue-700 mt-4 text-white font-semibold hover:text-lg hover:text-yellow-400 hover:bg-blue-800 hover:underline transition-all"
         >
-          Me enviar!
+          Enviar!
         </button>
       </form>
     </section>

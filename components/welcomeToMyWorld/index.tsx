@@ -5,7 +5,7 @@ export default function WelcomeToMyWorld() {
   return (
     <section
       id="welcomeToMyWorld"
-      className={`bg-gray-200 pt-8 border-t-2 border-b-2 border-black/50 min-h-screen flex flex-col gap-4 items-center justify-center md:grid md:grid-rows-3 md:h-screen md:py-8`}
+      className={`bg-gray-200 pt-8 border-t-2 border-b-2 border-gray-500/50 min-h-screen flex flex-col gap-4 items-center justify-center md:grid md:grid-rows-3 md:h-screen md:py-8`}
     >
       <div className="mt-8 grid gap-6 mx-8 h-full bg-slate-400/70 p-6 rounded-2xl shadow-xl mb-2 md:grid-rows-3 md:grid-cols-12 md:row-span-1 md:mt-24">
         <div className="hidden col-span-4 md:grid">

@@ -4,7 +4,7 @@ export default function ThankYou() {
   return (
     <section
       id="thankYou"
-      className={`h-fit border-t-2 border-gray-800 bg-white`}
+      className={`border-t-2 border-gray-800 bg-white self-end`}
     >
       <div className="bg-orange-900/20 pl-8 py-4">
         <h2 className="text-lg font-bold underline mb-2">Contatos</h2>
