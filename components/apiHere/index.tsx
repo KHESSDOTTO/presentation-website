@@ -60,8 +60,8 @@ export default function ApiHere() {
       </div>
       <div className="rounded-xl bg-white/60 w-11/12 h-2/3 border-2 flex justify-center items-center">
         <GoogleMap
-          center={{ lat: 44, lng: -80 }}
-          zoom={10}
+          center={{ lat: -23.642429988253433, lng: -46.662051583212225 }}
+          zoom={12}
           mapContainerClassName={styles.someClass}
         >
           <Marker position={{ lat: 44, lng: -80 }} />

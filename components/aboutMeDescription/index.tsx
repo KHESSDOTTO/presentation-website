@@ -14,10 +14,10 @@ export default function AboutMeDescription() {
           Quem sou eu?
         </h3>
         <p>
-          Sou apaixonado por tecnologia, lógica e matemática. Adoro consertar e
-          criar coisas novas. Acredito que a tecnologia é umas das maiores
-          chaves para o aumento da produtividade e tem grande capacidade para
-          trazer benefícios à sociedade e às pessoas em geral.
+          Sou apaixonado por tecnologia, lógica e matemática. Adoro consertar,
+          melhorar e criar coisas novas! Acredito que a tecnologia tem uma
+          enorme capacidade para trazer benefícios à sociedade e às pessoas em
+          geral.
         </p>
       </div>
       <div className="border-b-2 py-8 border-black">
@@ -41,9 +41,8 @@ export default function AboutMeDescription() {
           <li>É essencial ter propósito;</li>
           <li>
             Consistência, paciência, paixão e disciplina são as chaves para se
-            conquistar grandes coisas;
+            conquistar quase qualquer coisa.
           </li>
-          <li>Pessoas como fins, não somente meios.</li>
         </ul>
       </div>
       <div className="py-8">
@@ -80,7 +79,7 @@ export default function AboutMeDescription() {
             <a
               href="https://1drv.ms/w/s!ArXufD8dYFs-znz5Ppuce45XeQ4_?e=v4RDWk"
               target="_blank"
-              className="text-sm"
+              className="text-sm text-blue-800"
             >
               Acessar portfolio
             </a>
@@ -102,7 +101,7 @@ export default function AboutMeDescription() {
             <a
               href="https://1drv.ms/w/s!ArXufD8dYFs-znmehF9I_3irDvna?e=SaYagu"
               target="_blank"
-              className="text-sm"
+              className="text-sm text-green-800"
             >
               Acessar CV.
             </a>
