@@ -5,9 +5,9 @@ export default function WelcomeToMyWorld() {
   return (
     <section
       id="welcomeToMyWorld"
-      className={`bg-gray-200 pt-8 border-t-2 border-b-2 border-gray-500/50 min-h-screen flex flex-col gap-4 items-center justify-center md:grid md:grid-rows-3 md:h-screen md:py-8`}
+      className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 border-b border-white/50 min-h-screen flex flex-col gap-4 items-center justify-center md:grid md:grid-rows-3 md:h-screen md:py-8`}
     >
-      <div className="mt-8 grid gap-6 mx-8 h-full bg-slate-400/70 p-6 rounded-2xl shadow-xl mb-2 md:grid-rows-3 md:grid-cols-12 md:row-span-1 md:mt-24">
+      <div className="mt-8 grid gap-6 mx-8 h-full bg-slate-400/70 p-6 rounded-2xl shadow-lg shadow-black mb-2 md:grid-rows-3 md:grid-cols-12 md:row-span-1 md:mt-24">
         <div className="hidden col-span-4 md:grid">
           <span className="text-gray-600 italic col-span-1 text-sm text-top text-center px-4 pt-8 md:block">
             Khess:
@@ -26,23 +26,21 @@ export default function WelcomeToMyWorld() {
           <legend className="italic mb-2 text-3xl md:hidden font-['Great_Vibes']">
             Khess Santomauro Dotto
           </legend>
-          <article className="text-center bg-white/80 text-sm rounded-lg p-4 md:p-2 md:text-xs">
+          <article className="text-center bg-white/80 text-md rounded-lg p-4 md:p-2 md:text-xs">
             <p className="pb-2">
-              Olá! Meu nome é Khess. Esse é um breve site para me apresentar.
-              Sou um desenvolvedor web em busca da melhorias constantes!{" "}
-              <span className="text-lg">&#128591;</span> Abaixo, há uma seção
-              interativa com informações básicas sobre mim, minha trajetória,
-              stack atual e stacks em que estou trabalhando.
+              Olá! Meu nome é Khess. Sou um desenvolvedor web em busca da
+              melhorias constantes! <span className="text-lg">&#128591;</span>{" "}
+              Abaixo, informações básicas sobre mim, meu stack atual, stacks em
+              que estou trabalhando, bem como links (CV, portfolio...).
             </p>{" "}
             <p>
-              Em seguida, há uma seção de comentários para me ajudarem a
-              melhorar... não hesite em deixar sua sugestão, por favor!
-              &#128521; Logo após, meus contatos. Não deixe de checar este
-              website tanto em celulares quanto desktops (mobile-first).{" "}
+              Não deixe de checar este website tanto em celulares quanto
+              desktops (mobile-first)! Por favor, deixe um comentário ou
+              sugestão ao final da sua visita, se puder. &#128521;
             </p>
           </article>
         </fieldset>
-        <div className="flex flex-row justify-center col-start-2 col-end-12 items-center border-l-gray-800 border-l-8 shadow-lg p-2 rounded-l-xl rounded-r-lg md:hidden">
+        <div className="bg-slate-100/90 flex flex-row justify-center col-start-2 col-end-12 items-center border-l-gray-800 border-l-8 shadow-lg shadow-black p-2 rounded-l-xl rounded-r-lg md:hidden">
           <Image
             src={img}
             alt="myself"

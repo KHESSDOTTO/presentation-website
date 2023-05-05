@@ -14,21 +14,19 @@ import AboutMeCurrStack from "../aboutMeCurrStack";
 import AboutMeDescription from "../aboutMeDescription";
 import AboutMeWorkStack from "../aboutMeWorkStack";
 import ApiHere from "../apiHere";
-
-export interface Pag {
-  dynamicBullets: boolean;
-}
+import { PaginationOptions } from "swiper/types";
 
 export default function AboutMe() {
   let [nav, setNav] = useState<boolean>(false),
-    [pag, setPag] = useState<boolean | Pag>(false);
+    [pag, setPag] = useState<boolean | PaginationOptions>(false);
 
   useEffect(() => {
     if (window.screen.width < 768) {
-      setPag({ dynamicBullets: true });
+      // setPag({ dynamicBullets: true });
+      setPag(true);
       setNav(false);
     } else {
-      setPag(false);
+      setPag({ type: "fraction" });
       setNav(true);
     }
   }, []);
@@ -36,7 +34,7 @@ export default function AboutMe() {
   return (
     <section
       id="aboutMe"
-      className="min-h-screen pt-16 grid grid-rows-5 border-2 gap-4"
+      className="min-h-screen pt-16 grid grid-rows-5 border-2 bg-gradient-to-b from-10% from-gray-300 to-white"
     >
       <div>
         <div className="border-b-4 border-b-black flex flex-col items-center justify-center gap-4 bg-white rounded-t-full text-center mx-2 p-2 pt-8 shadow-xl">

@@ -1,6 +1,6 @@
 export default function AboutMeDescription() {
   return (
-    <article className="flex flex-col justify-start px-4 h-full">
+    <article className="flex flex-col justify-start px-4 h-full bg-gradient-to-b from-gray-300 to-white">
       <div className="border-b-2 py-8 border-black">
         <h3 className="underline font-semibold text-xl text-gray-700 mb-4 flex flex-row items-center gap-4">
           <svg
@@ -14,10 +14,9 @@ export default function AboutMeDescription() {
           Quem sou eu?
         </h3>
         <p>
-          Sou apaixonado por tecnologia, lógica e matemática. Adoro consertar,
-          melhorar e criar coisas novas! Acredito que a tecnologia tem uma
-          enorme capacidade para trazer benefícios à sociedade e às pessoas em
-          geral.
+          Sou apaixonado por tecnologia, lógica e matemática. Adoro consertar e
+          criar coisas novas! Acredito que a tecnologia tem uma enorme
+          capacidade para trazer benefícios à sociedade e às pessoas em geral.
         </p>
       </div>
       <div className="border-b-2 py-8 border-black">
@@ -79,7 +78,7 @@ export default function AboutMeDescription() {
             <a
               href="https://1drv.ms/w/s!ArXufD8dYFs-znz5Ppuce45XeQ4_?e=v4RDWk"
               target="_blank"
-              className="text-sm text-blue-800"
+              className="text-sm text-blue-800 L-Affiliate-Tagged"
             >
               Acessar portfolio
             </a>
@@ -101,7 +100,7 @@ export default function AboutMeDescription() {
             <a
               href="https://1drv.ms/w/s!ArXufD8dYFs-znmehF9I_3irDvna?e=SaYagu"
               target="_blank"
-              className="text-sm text-green-800"
+              className="text-sm text-blue-800 L-Affiliate-Tagged"
             >
               Acessar CV.
             </a>
