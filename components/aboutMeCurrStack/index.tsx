@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutMeCurrStack() {
   return (
     <article className="px-4 gap-8 flex flex-col justify-center text-green-900">
-      <div className="grid grid-cols-12 shadow-md shadow-black px-6 pb-6 bg-white/60">
+      <div className="grid grid-cols-12 shadow-md shadow-black px-6 pb-6 bg-white/30">
         <h3 className="col-span-12 text-4xl font-semibold text-green-900 flex flex-row gap-2 items-center justify-start py-8 underline underline-offset-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"

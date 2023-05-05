@@ -11,7 +11,7 @@ export default function AboutMeWorkStack() {
 
   return (
     <article className="flex flex-col px-2 text-indigo-900 gap-10">
-      <div className="grid grid-cols-12 px-6 shadow-md shadow-black pb-6 bg-white/60 mx-2">
+      <div className="grid grid-cols-12 px-6 shadow-md shadow-black pb-6 bg-white/30 mx-2">
         <h3 className="col-span-12 text-3xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
