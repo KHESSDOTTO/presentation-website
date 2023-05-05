@@ -59,6 +59,7 @@ export default function Comments() {
             className="border border-black rounded-md"
             value={form.commenter}
             onChange={handleChange}
+            required={true}
           ></input>
         </div>
         <div className="flex flex-col">
@@ -73,6 +74,7 @@ export default function Comments() {
             cols={45}
             value={form.comment}
             onChange={handleChange}
+            required={true}
           ></textarea>
         </div>
         <button

@@ -1,6 +1,6 @@
 export default function AboutMeCurrStack() {
   return (
-    <article className="grid grid-cols-12 px-6">
+    <article className="grid grid-cols-12 px-6 gap-6">
       <h3 className="col-span-12 text-4xl font-semibold flex flex-row gap-2 items-center justify-start py-8 underline underline-offset-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ export default function AboutMeCurrStack() {
         </svg>
         Stack Atual
       </h3>
-      <div className="col-span-7 flex flex-col gap-6">
+      <div className="col-span-6 flex flex-col gap-6">
         <div className="flex flex-row items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function AboutMeCurrStack() {
           <li>Next.js</li>
         </ul>
       </div>
-      <div className="col-span-5 flex flex-col gap-6">
+      <div className="col-span-6 flex flex-col gap-6">
         <div className="flex flex-row items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,6 @@ export default function AboutMeCurrStack() {
               d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
             />
           </svg>
-
           <h4 className="text-2xl font-semibold text-gray-700 underline decoration-wavy">
             Back-end:
           </h4>

@@ -1,7 +1,7 @@
 export default function AboutMeWorkStack() {
   return (
-    <article className="grid grid-cols-12">
-      <h3 className="flex flex-row justify-center items-center gap-2 col-span-12 text-2xl underline font-semibold">
+    <article className="grid grid-cols-12 px-6 gap-6">
+      <h3 className="col-span-12 text-4xl font-semibold flex flex-row gap-2 items-center justify-start py-8 underline underline-offset-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -17,17 +17,53 @@ export default function AboutMeWorkStack() {
         </svg>
         Stack em que estou trabalhando
       </h3>
-      <div className="col-span-6">
-        <h4>Front-end:</h4>
-        <ul>
+      <div className="col-span-6 flex flex-col gap-6">
+        <div className="flex flex-row items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
+            />
+          </svg>
+          <h4 className="text-2xl font-semibold text-gray-700 underline decoration-wavy">
+            Front-end:
+          </h4>
+        </div>
+        <ul className="list-disc flex flex-col gap-2 font-semibold list-inside">
           <li>SASS</li>
           <li>React Native</li>
           <li>Jest</li>
         </ul>
       </div>
-      <div className="col-span-6">
-        <h4>Back-end:</h4>
-        <ul>
+      <div className="col-span-5 flex flex-col gap-6">
+        <div className="flex flex-row items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+            />
+          </svg>
+          <h4 className="text-2xl font-semibold text-gray-700 underline decoration-wavy">
+            Back-end:
+          </h4>
+        </div>
+        <ul className="list-disc flex flex-col gap-2 font-semibold list-inside">
           <li>SQL</li>
           <li>PostgreSQL</li>
         </ul>
