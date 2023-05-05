@@ -1,12 +1,12 @@
 export default function AboutMeWorkStack() {
   return (
     <article className="grid grid-cols-12 px-6 gap-6">
-      <h3 className="col-span-12 text-4xl font-semibold flex flex-row gap-2 items-center justify-start py-8 underline underline-offset-4">
+      <h3 className="col-span-12 text-3xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="darkblue"
-          className="w-10 h-10"
+          className="w-14 h-14"
         >
           <path d="M4.5 9.75a.75.75 0 00-.75.75V15c0 .414.336.75.75.75h6.75A.75.75 0 0012 15v-4.5a.75.75 0 00-.75-.75H4.5z" />
           <path

@@ -38,7 +38,7 @@ export default function ApiHere() {
 
   return (
     <section
-      className={`flex flex-col items-center justify-start gap-6 h-full`}
+      className={`flex flex-col items-center justify-center gap-6 h-full`}
     >
       <div className="flex flex-col gap-2 self-start px-8">
         <div className="self-start flex flex-row gap-2 items-center font-semibold underline">
