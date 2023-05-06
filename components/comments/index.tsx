@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { AttentionSeeker } from "react-awesome-reveal";
+import { AttentionSeeker, Flip, Roll } from "react-awesome-reveal";
 import toast from "react-hot-toast";
 
 export interface CommentForm {
@@ -36,9 +36,11 @@ export default function Comments() {
   };
 
   return (
-    <section className="row-span-3 pl-4 pr-1 flex flex-col items-start justify-center gap-2 bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg py-8">
-      <div className="ml-2">
-        <h2 className="text-xl font-bold underline">Deixe um comentário!</h2>
+    <section className="row-span-3 pl-4 pr-1 flex flex-col items-start justify-center gap-4 bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg py-8">
+      <div className="ml-2 flex flex-col gap-2">
+        <Flip>
+          <h2 className="text-2xl font-bold underline">Deixe um comentário!</h2>
+        </Flip>
         <p className="text-sm italic font-semibold indent-2">*Leio todos</p>
       </div>
       <p className="text-sm mb-4">
@@ -79,7 +81,7 @@ export default function Comments() {
             required={true}
           ></textarea>
         </div>
-        <AttentionSeeker effect="tada" delay={1000}>
+        <AttentionSeeker effect="tada" delay={1500}>
           <button
             type="submit"
             className="flex items-center gap-2 rounded-md py-2 px-4 bg-blue-600 mt-4 text-white font-semibold hover:text-lg hover:text-yellow-300 hover:bg-blue-800 transition-all"
