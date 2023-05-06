@@ -36,24 +36,24 @@ export default function Comments() {
   };
 
   return (
-    <section className="row-span-3 pl-4 pr-1 flex flex-col items-start justify-center gap-4 bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg py-8">
-      <div className="ml-2 flex flex-col gap-2">
+    <section className="row-span-3 pl-4 pr-1 flex flex-col items-center justify-center gap-6 bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg py-8">
+      <div className="ml-2 flex flex-col items-center gap-4">
         <Flip>
-          <h2 className="text-2xl font-bold underline">Deixe um comentário!</h2>
+          <h2 className="text-3xl font-bold underline">Deixe um comentário!</h2>
         </Flip>
         <p className="text-sm italic font-semibold indent-2">*Leio todos</p>
       </div>
-      <p className="text-sm mb-4">
+      <p className="text-sm mb-4 text-center">
         Deixe-me sugestões, dicas, stacks e tecnologias úteis, enfim,{" "}
         <span className="font-semibold underline">qualquer coisa!!</span>{" "}
         &#128518; rs... Por favor, gostaria muito de saber a sua opinião.
       </p>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-start justify-center gap-2"
+        className="flex flex-col items-center justify-center gap-4"
       >
         <div className="flex flex-col">
-          <label htmlFor="commenter" className="mb-2">
+          <label htmlFor="commenter" className="mb-2 text-center">
             Seu nome ou identificação:
           </label>
           <input
@@ -67,7 +67,7 @@ export default function Comments() {
           ></input>
         </div>
         <div className="flex flex-col">
-          <label htmlFor="comment" className="mb-2">
+          <label htmlFor="comment" className="mb-2 text-center">
             Comentário:
           </label>
           <textarea
