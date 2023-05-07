@@ -1,13 +1,13 @@
 import Image from "next/image";
 import img from "../../images/khess.png";
 import { Fade } from "react-awesome-reveal";
+import { useState, useEffect } from "react";
 
-export default function WelcomeToMyWorld() {
-  return (
-    <section
-      id="welcomeToMyWorld"
-      className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 border-b border-white/50 min-h-screen flex flex-col gap-4 items-center justify-center md:grid md:grid-rows-3 md:h-screen md:py-8`}
-    >
+function FadeComp() {
+  const [toRender, setToRender] = useState(<div></div>);
+
+  useEffect(() => {
+    setToRender(
       <Fade direction="left" delay={400} duration={1100}>
         <div className="mt-8 grid gap-6 mx-8 h-full bg-slate-400/70 p-6 rounded-2xl shadow-lg shadow-black mb-2 md:grid-rows-3 md:grid-cols-12 md:row-span-1 md:mt-24">
           <div className="hidden col-span-4 md:grid">
@@ -38,7 +38,7 @@ export default function WelcomeToMyWorld() {
               <p>
                 Não deixe de checar este website tanto em celulares quanto
                 desktops (mobile-first)! Por favor, deixe um comentário ou
-                sugestão ao final da sua visita, se puder. &#128521;
+                sugestão ao final da sua visita. &#128521;
               </p>
             </article>
           </fieldset>
@@ -53,6 +53,19 @@ export default function WelcomeToMyWorld() {
           </div>
         </div>
       </Fade>
+    );
+  }, []);
+
+  return <>{toRender}</>;
+}
+
+export default function WelcomeToMyWorld() {
+  return (
+    <section
+      id="welcomeToMyWorld"
+      className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 border-b border-white/50 min-h-screen flex flex-col gap-4 items-center justify-center md:grid md:grid-rows-3 md:h-screen md:py-8`}
+    >
+      <FadeComp />
       <h1 className="hidden font-['Great_Vibes'] underline text-7xl mt-12 md:flex mx-auto md:col-span-12 md:row-span-2 flex-row items-center gap-4">
         Khess Santomauro Dotto{" "}
       </h1>
