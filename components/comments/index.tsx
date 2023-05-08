@@ -9,6 +9,7 @@ import {
   Fade,
 } from "react-awesome-reveal";
 import toast from "react-hot-toast";
+import { Fireworks } from "@fireworks-js/react";
 
 export interface CommentForm {
   commenter: string;
@@ -44,6 +45,14 @@ export default function Comments() {
 
   return (
     <section className="row-span-3 pl-4 pr-1 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg py-8">
+      <Fireworks
+        options={{
+          rocketsPoint: {
+            min: 0,
+            max: 100,
+          },
+        }}
+      />
       <div className="ml-2 flex flex-col items-center gap-2">
         <Flip duration={1000}>
           <h2 className="text-3xl font-bold underline">Deixe um comentário!</h2>
