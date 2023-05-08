@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import axios from "axios";
 import {
   AttentionSeeker,
@@ -9,7 +9,7 @@ import {
   Fade,
 } from "react-awesome-reveal";
 import toast from "react-hot-toast";
-import { Fireworks } from "@fireworks-js/react";
+import { Fireworks, FireworksHandlers } from "@fireworks-js/react";
 
 export interface CommentForm {
   commenter: string;
@@ -28,13 +28,10 @@ export default function Comments() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault();
-      console.log("Running...");
-      console.log(form);
       await axios.post("http://localhost:3000/api/comment", {
         commenter: form.commenter,
         comment: form.comment,
       });
-      console.log("Finished");
       setForm({ commenter: "", comment: "" });
       toast.success("Comment sent!");
     } catch (err) {
@@ -53,9 +50,11 @@ export default function Comments() {
           },
         }}
       />
-      <div className="ml-2 flex flex-col items-center gap-2">
+      <div className="ml-2 flex flex-col items-center gap-2 ">
         <Flip duration={1000}>
-          <h2 className="text-3xl font-bold underline">Deixe um comentário!</h2>
+          <h2 className="text-3xl font-bold underline animate-bounce">
+            Deixe um comentário!
+          </h2>
         </Flip>
         <p className="text-sm italic font-semibold indent-2">*Leio todos</p>
       </div>
@@ -112,7 +111,7 @@ export default function Comments() {
               required={true}
             ></textarea>
           </div>
-          <AttentionSeeker effect="tada" delay={1500}>
+          <AttentionSeeker effect="tada" delay={2500}>
             <button
               type="submit"
               className="flex items-center gap-2 rounded-md py-2 px-4 bg-blue-600 mt-4 text-white font-semibold hover:text-lg hover:text-yellow-300 hover:bg-blue-800 transition-all"
