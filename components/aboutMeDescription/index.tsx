@@ -1,6 +1,6 @@
 export default function AboutMeDescription() {
   return (
-    <article className="flex flex-col justify-start px-4 h-full bg-gradient-to-b from-gray-300 to-white">
+    <article className="flex flex-col justify-start px-4 h-full">
       <div className="border-b-2 py-8 border-black">
         <h3 className="underline font-semibold text-xl text-gray-700 mb-4 flex flex-row items-center gap-4">
           <svg
@@ -18,6 +18,7 @@ export default function AboutMeDescription() {
           criar coisas novas! Acredito que a tecnologia tem uma enorme
           capacidade para trazer benefícios à sociedade e às pessoas em geral.
         </p>
+        <p>Inglês avançado (experiências internacionais).</p>
       </div>
       <div className="border-b-2 py-8 border-black">
         <h3 className="underline font-semibold text-xl text-gray-700 mb-4 flex flex-row items-center gap-4">

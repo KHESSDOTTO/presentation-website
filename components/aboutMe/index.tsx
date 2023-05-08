@@ -15,6 +15,7 @@ import AboutMeDescription from "../aboutMeDescription";
 import AboutMeWorkStack from "../aboutMeWorkStack";
 import ApiHere from "../apiHere";
 import { PaginationOptions } from "swiper/types";
+import AboutMeExperience from "../aboutMeExperience";
 
 export default function AboutMe() {
   let [nav, setNav] = useState<boolean>(false),
@@ -34,7 +35,7 @@ export default function AboutMe() {
   return (
     <section
       id="aboutMe"
-      className="min-h-screen pt-16 grid grid-rows-5 border-2 bg-gradient-to-b from-10% from-gray-300 to-white"
+      className="min-h-screen pt-16 grid grid-rows-5 border-y-4 bg-gradient-to-b from-10% from-gray-300 to-white"
     >
       <div>
         <div className="border-b-4 border-b-black flex flex-col items-center justify-center gap-4 bg-white rounded-t-full text-center mx-2 p-2 pt-8 shadow-xl">
@@ -67,6 +68,9 @@ export default function AboutMe() {
       >
         <SwiperSlide>
           <AboutMeDescription />
+        </SwiperSlide>
+        <SwiperSlide>
+          <AboutMeExperience />
         </SwiperSlide>
         <SwiperSlide>
           <AboutMeCurrStack />

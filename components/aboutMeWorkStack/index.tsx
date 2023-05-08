@@ -1,7 +1,7 @@
 import Image from "next/image";
 import imgConstruction from "../../images/construction.jpeg";
 import { useState, useEffect } from "react";
-import { Bounce, Slide, Roll } from "react-awesome-reveal";
+import { Bounce, Slide, Roll, Fade } from "react-awesome-reveal";
 
 export default function AboutMeWorkStack() {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -12,7 +12,7 @@ export default function AboutMeWorkStack() {
 
   return (
     <article className="flex flex-col px-2 text-indigo-900 gap-10">
-      <Slide>
+      <Slide duration={750} direction="left">
         <div className="grid grid-cols-12 px-6 shadow-md shadow-indigo-900 pb-6 bg-gradient-to-b from-white/70 to-white/10 mx-2">
           <h3 className="col-span-12 text-3xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4">
             <svg
@@ -78,7 +78,10 @@ export default function AboutMeWorkStack() {
             </div>
             <ul className="list-disc flex flex-col gap-2 font-semibold list-inside">
               <li>SQL</li>
-              <li>PostgreSQL</li>
+              <li>
+                <span>PostgreSQL</span>
+                <span className="text-xs block ml-6">*(neste site!)</span>
+              </li>
             </ul>
           </div>
         </div>

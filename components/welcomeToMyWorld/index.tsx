@@ -30,7 +30,7 @@ function FadeComp() {
             </legend>
             <article className="text-center bg-white/80 text-md rounded-lg p-4 md:p-2 md:text-xs">
               <p className="pb-2">
-                Olá! Meu nome é Khess. Sou um desenvolvedor web em busca da
+                Olá! Meu nome é Khess. Sou um desenvolvedor web em busca de
                 melhorias constantes! <span className="text-lg">&#128591;</span>{" "}
                 Abaixo, informações básicas sobre mim, meu stack atual, stacks
                 em que estou trabalhando, bem como links (CV, portfolio...).
@@ -63,7 +63,7 @@ export default function WelcomeToMyWorld() {
   return (
     <section
       id="welcomeToMyWorld"
-      className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 border-b border-white/50 min-h-screen flex flex-col gap-4 items-center justify-center md:grid md:grid-rows-3 md:h-screen md:py-8`}
+      className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:grid md:grid-rows-3 md:h-screen md:py-8`}
     >
       <FadeComp />
       <h1 className="hidden font-['Great_Vibes'] underline text-7xl mt-12 md:flex mx-auto md:col-span-12 md:row-span-2 flex-row items-center gap-4">

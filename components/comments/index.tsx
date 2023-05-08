@@ -41,7 +41,7 @@ export default function Comments() {
   };
 
   return (
-    <section className="row-span-3 pl-4 pr-1 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg py-8">
+    <section className="row-span-3 pl-4 pr-1 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg py-8 max-w-screen">
       <Fireworks
         options={{
           rocketsPoint: {
@@ -60,9 +60,10 @@ export default function Comments() {
       </div>
       <div className="flex flex-col items-center gap-2">
         <p className="text-sm text-center">
-          Deixe-me sugestões, dicas, stacks e tecnologias úteis, enfim,{" "}
+          E aí, me daria uma chance? &#128521; Deixe-me sugestões, dicas, stacks
+          e tecnologias úteis, enfim,{" "}
           <span className="font-semibold underline">qualquer coisa!!</span>{" "}
-          &#128518; rs... Por favor, gostaria muito de saber a sua opinião.
+          rs... Por favor, gostaria muito de saber a sua opinião.
         </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +112,7 @@ export default function Comments() {
               required={true}
             ></textarea>
           </div>
-          <AttentionSeeker effect="tada" delay={2500}>
+          <AttentionSeeker effect="tada" delay={6000} className="max-w-screen">
             <button
               type="submit"
               className="flex items-center gap-2 rounded-md py-2 px-4 bg-blue-600 mt-4 text-white font-semibold hover:text-lg hover:text-yellow-300 hover:bg-blue-800 transition-all"

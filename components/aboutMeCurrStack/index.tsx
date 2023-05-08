@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function AboutMeCurrStack() {
   return (
     <article className="px-4 gap-8 flex flex-col justify-center text-green-900">
-      <Slide duration={1000}>
+      <Slide direction="down" duration={500}>
         <div className="grid grid-cols-12 shadow-lg shadow-green-900 px-6 pb-8 bg-gradient-to-b from-white/70 to-white/10">
           <h3 className="col-span-12 text-4xl font-semibold text-green-900 flex flex-row gap-2 items-center justify-start py-8 underline underline-offset-4">
             <svg
@@ -43,8 +43,8 @@ export default function AboutMeCurrStack() {
               </h4>
             </div>
             <ul className="list-disc flex flex-col gap-2 font-semibold list-inside">
-              <li>HTML (HTML5)</li>
-              <li>CSS (CSS3)</li>
+              <li>HTML</li>
+              <li>CSS</li>
               <li>Javascript</li>
               <li>Typescript</li>
               <li>React.js</li>

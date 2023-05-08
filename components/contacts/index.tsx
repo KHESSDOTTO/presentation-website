@@ -1,6 +1,6 @@
 import { SocialIcon } from "react-social-icons";
 
-export default function ThankYou() {
+export default function Contacts() {
   return (
     <section
       id="thankYou"
