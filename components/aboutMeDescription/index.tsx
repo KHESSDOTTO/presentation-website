@@ -1,8 +1,8 @@
 export default function AboutMeDescription() {
   return (
-    <article className="flex flex-col justify-start px-4 h-full md:grid md:grid-cols-3 md:gap-8 md:divide-x-4 md:divide-black">
-      <div className="border-b-2 py-8 border-black md:flex md:flex-col md:border-none">
-        <h3 className="underline font-semibold text-xl text-gray-700 mb-4 flex flex-row items-center gap-4">
+    <article className="flex flex-col justify-start gap-2 px-4 h-full md:flex-row md:items-start md:pt-16 md:divide-x-2 md:divide-gray-400 md:justify-center md:px-8">
+      <div className="border-b-2 py-8 gap-4 border-black md:basis-1/3 md:flex md:flex-col md:px-10 md:h-full md:border-b-0">
+        <h3 className="underline font-semibold text-xl text-gray-700 flex flex-row items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -13,16 +13,14 @@ export default function AboutMeDescription() {
           </svg>
           Quem sou eu?
         </h3>
-        <p className="md:text-justify md:inline">
+        <p>
           Sou apaixonado por tecnologia, lógica e matemática. Adoro consertar e
           criar coisas novas! Acredito que a tecnologia tem uma enorme
           capacidade para trazer benefícios à sociedade e às pessoas em geral.
-        </p>
-        <p className="md:inline">
-          Inglês avançado (experiências internacionais).
+          Inglês avançado (com experiências internacionais).
         </p>
       </div>
-      <div className="border-b-2 py-8 border-black md:border-none">
+      <div className=" md:h-5/6 border-b-2 py-8 gap-4 border-black md:basis-1/3 md:flex md:flex-col md:px-10 md:h-full md:border-b-0">
         <h3 className="underline font-semibold text-xl text-gray-700 mb-4 flex flex-row items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +45,7 @@ export default function AboutMeDescription() {
           </li>
         </ul>
       </div>
-      <div className="py-8 md:border-none">
+      <div className="py-8 gap-4 md:h-5/6 md:basis-1/3 md:flex md:flex-col md:px-10 md:h-full md:border-b-0">
         <h3 className="underline font-semibold text-xl text-gray-700 mb-4 flex flex-row items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"

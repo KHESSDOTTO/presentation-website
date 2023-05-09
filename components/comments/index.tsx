@@ -41,7 +41,7 @@ export default function Comments() {
   };
 
   return (
-    <section className="row-span-3 pl-4 pr-1 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg py-8 max-w-screen">
+    <section className="row-span-3 pl-4 pr-1 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg py-8 max-w-screen md:py-4">
       <Fireworks
         options={{
           rocketsPoint: {
@@ -50,7 +50,7 @@ export default function Comments() {
           },
         }}
       />
-      <div className="ml-2 flex flex-col items-center gap-2 ">
+      <div className="ml-2 flex flex-col items-center gap-2">
         <Flip duration={1000}>
           <h2 className="text-3xl font-bold underline animate-bounce">
             Deixe um comentário!
@@ -58,7 +58,7 @@ export default function Comments() {
         </Flip>
         <p className="text-sm italic font-semibold indent-2">*Leio todos</p>
       </div>
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 md:gap-0">
         <p className="text-sm text-center">
           E aí, me daria uma chance? &#128521; Deixe-me sugestões, dicas, stacks
           e tecnologias úteis, enfim,{" "}
@@ -81,7 +81,7 @@ export default function Comments() {
         </svg>
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col items-center justify-center gap-4"
+          className="flex flex-col items-center justify-center gap-4 md:gap-2"
         >
           <div className="flex flex-col">
             <label htmlFor="commenter" className="mb-2 text-center">

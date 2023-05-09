@@ -39,15 +39,15 @@ export default function ApiHere() {
 
   return (
     <section
-      className={`flex flex-col items-center justify-center gap-10 h-full`}
+      className={`flex flex-col items-center justify-center gap-10 h-full md:flex-row md:justify-evenly md:gap-0`}
     >
       <Slide
         direction="down"
         duration={1200}
         delay={200}
-        className="self-start"
+        className="self-start md:self-center"
       >
-        <div className="flex flex-col gap-2 self-start px-8">
+        <div className="flex flex-col gap-2 self-start px-8 md:px-0">
           <div className="self-start flex flex-row gap-2 items-center font-semibold underline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,10 +63,11 @@ export default function ApiHere() {
             </svg>
             <h2 className="text-2xl">Onde estou</h2>
           </div>
-          <p className="italic">São Paulo, São Paulo, Brasil</p>
+          <p className="italic md:hidden">São Paulo, São Paulo, Brasil</p>
         </div>
       </Slide>
-      <div className="rounded-xl bg-white/60 w-11/12 h-2/3 border-2 flex justify-center items-center">
+      <div className="hidden md:inline-block md:h-2/5 md:border-l-2 md:border-gray-800 md:mr-4"></div>
+      <div className="rounded-xl bg-white/60 w-11/12 h-2/3 border-2 flex flex-col gap-2 justify-center items-center md:w-3/5 md:h-5/6">
         <GoogleMap
           center={{ lat: -23.642429988253433, lng: -46.662051583212225 }}
           zoom={12}
@@ -74,6 +75,7 @@ export default function ApiHere() {
         >
           <Marker position={{ lat: 44, lng: -80 }} />
         </GoogleMap>
+        <p className="italic">São Paulo, São Paulo, Brasil</p>
       </div>
     </section>
   );
