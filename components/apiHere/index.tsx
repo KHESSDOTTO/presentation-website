@@ -63,7 +63,7 @@ export default function ApiHere() {
             </svg>
             <h2 className="text-2xl">Onde estou</h2>
           </div>
-          <p className="italic md:hidden">São Paulo, São Paulo, Brasil</p>
+          <p className="italic ">São Paulo, São Paulo, Brasil</p>
         </div>
       </Slide>
       <div className="hidden md:inline-block md:h-2/5 md:border-l-2 md:border-gray-800 md:mr-4"></div>
@@ -75,7 +75,9 @@ export default function ApiHere() {
         >
           <Marker position={{ lat: 44, lng: -80 }} />
         </GoogleMap>
-        <p className="italic">São Paulo, São Paulo, Brasil</p>
+        <p className="italic text-xs hidden md:inline-block">
+          São Paulo, São Paulo, Brasil
+        </p>
       </div>
     </section>
   );

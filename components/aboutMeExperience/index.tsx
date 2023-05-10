@@ -4,7 +4,7 @@ export default function AboutMeExperience() {
   return (
     <Fade duration={1000} delay={300}>
       <article className="md:w-9/12 md:mx-auto md:px-16 md:py-4 md:my-4 md:bg-white/80 md:rounded-2xl">
-        <div className="flex flex-col items-center justify-center gap-4 pb-6">
+        <div className="py-4 px-8 flex flex-col items-center justify-center gap-4 md:p-0">
           <div className="underline font-semibold text-xl text-gray-700 flex flex-row items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ export default function AboutMeExperience() {
             </svg>
             <h3>Minha história/experiência</h3>
           </div>
-          <div className="flex flex-col gap-4 text-sm leading-relaxed indent-4 text-justify md:text-md">
+          <div className="flex flex-col gap-4 text-sm leading-relaxed indent-4 text-justify md:text-md md:leading-5">
             <p>
               Comecei minha carreira no mercado financeiro com uma oportunidade
               que recebi pela faculdade (FGV). Apesar de possuir um perfil
@@ -41,7 +41,10 @@ export default function AboutMeExperience() {
               contato/experiência com programação em geral e 1 ano
               especificamente com desenvolvimento web! À procura do primeiro
               emprego formal... Quer saber mais? Me chame e vamos conversar!!!
-              Meus contatos estão ao final (rodapé).
+              Meus contatos estão ao final (rodapé).{" "}
+              <span className="font-semibold text-xs italic">
+                *Obs: Inglês avançado.
+              </span>
             </p>
           </div>
         </div>

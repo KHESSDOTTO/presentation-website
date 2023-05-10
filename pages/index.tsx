@@ -11,10 +11,10 @@ export default function Home() {
     <>
       <Toaster />
       <NavBar />
-      <Fade duration={1500} delay={300} fraction={0}>
+      <Fade duration={1500} delay={300}>
         <WelcomeToMyWorld />
       </Fade>
-      <Fade duration={1500} delay={300} fraction={0}>
+      <Fade duration={1500} delay={300}>
         <AboutMe />
       </Fade>
       <div className="min-h-screen grid grid-rows-3">

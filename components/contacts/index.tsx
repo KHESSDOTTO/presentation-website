@@ -11,7 +11,7 @@ export default function Contacts() {
           Contatos:
         </h2>
         <div className="md:flex md:flex-wrap md:text-xs md:gap-2 md:font-semibold">
-          <h3 className="flex flex-row gap-2 justify-start items-center">
+          <h3 className="flex flex-row gap-2 justify-start items-center md:gap-1">
             <SocialIcon
               url="https://linkedin.com/jaketrent"
               style={{ height: 20, width: 20 }}
@@ -26,7 +26,7 @@ export default function Contacts() {
               </span>
             </a>
           </h3>
-          <h3 className="flex flex-row gap-2 justify-start items-center">
+          <h3 className="flex flex-row gap-2 justify-start items-center md:gap-1">
             <SocialIcon
               url="https://email.com/jaketrent"
               style={{ height: 20, width: 20 }}
@@ -34,7 +34,17 @@ export default function Contacts() {
             <span className="font-semibold">E-mail:</span>{" "}
             <span className="text-sm md:text-xs">khessdotto@gmail.com</span>
           </h3>
-          <h3 className="flex flex-row gap-2 justify-start items-center">
+          <h3 className="flex flex-row gap-2 justify-start items-center md:gap-1">
+            <SocialIcon
+              url="https://github.com/jaketrent"
+              style={{ height: 20, width: 20 }}
+            />
+            <span className="font-semibold">Github:</span>{" "}
+            <span className="text-sm md:text-xs">
+              https://github.com/KHESSDOTTO
+            </span>
+          </h3>
+          <h3 className="flex flex-row gap-2 justify-start items-center md:gap-1">
             <SocialIcon
               url="https://whatsapp.com/jaketrent"
               style={{ height: 20, width: 20 }}
@@ -42,7 +52,7 @@ export default function Contacts() {
             <span className="font-semibold">Whatsapp:</span>{" "}
             <span className="text-sm md:text-xs">+55 (11) 94761-5365</span>
           </h3>
-          <h3 className="flex flex-row gap-2 justify-start items-center">
+          <h3 className="flex flex-row gap-2 justify-start items-center md:gap-1">
             <SocialIcon
               url="https://discord.com/jaketrent"
               style={{ height: 20, width: 20 }}
@@ -50,7 +60,7 @@ export default function Contacts() {
             <span className="font-semibold">Discord:</span>{" "}
             <span className="text-sm md:text-xs">Khess#8996</span>
           </h3>
-          <h3 className="flex flex-row gap-2 justify-start items-center">
+          <h3 className="flex flex-row gap-2 justify-start items-center md:gap-1">
             <SocialIcon
               url="https://telegram.com/jaketrent"
               style={{ height: 20, width: 20 }}
