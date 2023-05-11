@@ -17,6 +17,7 @@ import ApiHere from "../apiHere";
 import { PaginationOptions } from "swiper/types";
 import AboutMeExperience from "../aboutMeExperience";
 import { Fade } from "react-awesome-reveal";
+import AboutMeTotalStack from "../aboutMeTotalStack";
 
 export default function AboutMe() {
   let [nav, setNav] = useState<boolean>(false),
@@ -37,7 +38,7 @@ export default function AboutMe() {
     <Fade duration={1500} delay={500}>
       <section
         id="aboutMe"
-        className="min-h-screen pt-16 grid grid-rows-5 border-b-4 border-gray-400 border-b-gray-200 bg-gradient-to-b from-1% from-gray-400 to-white md:h-screen"
+        className="min-h-screen pt-16 grid grid-rows-5 border-b-4 border-gray-400 border-b-gray-200 bg-gradient-to-b from-1% from-gray-300 to-white md:h-screen md:from-gray-400"
       >
         <div>
           <div className="border-b-4 border-b-black flex flex-col items-center justify-center gap-4 bg-white rounded-t-full text-center mx-2 p-2 pt-8 shadow-xl md:pt-0 md:mx-48">
@@ -82,6 +83,9 @@ export default function AboutMe() {
           <SwiperSlide>
             <AboutMeWorkStack />
           </SwiperSlide>
+          {/* <SwiperSlide>
+            <AboutMeTotalStack />
+          </SwiperSlide> */}
           <SwiperSlide>
             <ApiHere />
           </SwiperSlide>

@@ -40,9 +40,11 @@ export default function Contacts() {
               style={{ height: 20, width: 20 }}
             />
             <span className="font-semibold">Github:</span>{" "}
-            <span className="text-sm md:text-xs">
-              https://github.com/KHESSDOTTO
-            </span>
+            <a href="https://github.com/KHESSDOTTO" target="_blank">
+              <span className="text-sm md:text-xs">
+                https://github.com/KHESSDOTTO
+              </span>
+            </a>
           </h3>
           <h3 className="flex flex-row gap-2 justify-start items-center md:gap-1">
             <SocialIcon

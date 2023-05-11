@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function AboutMeCurrStack() {
   return (
-    <article className="px-4 gap-8 flex flex-col justify-center text-green-900 md:flex-row">
+    <article className="px-4 gap-8 flex flex-col justify-center text-green-900 md:flex-row md:basis-1/3">
       <Slide direction="down" duration={500}>
-        <div className="grid grid-cols-12 shadow-lg shadow-green-900 px-6 pb-8 bg-gradient-to-b from-white/70 to-white/10">
+        <div className="grid grid-cols-12 shadow-lg shadow-green-900 px-6 pb-8 bg-gradient-to-b from-white/70 to-white/10 md:gap-2">
           <h3 className="col-span-12 text-4xl font-semibold text-green-900 flex flex-row gap-2 items-center justify-start py-8 underline underline-offset-4 md:py-4 md:text-3xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -22,67 +22,69 @@ export default function AboutMeCurrStack() {
             </svg>
             Stack Atual
           </h3>
-          <div className="col-span-6 flex flex-col gap-4">
-            <div className="flex flex-row items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
-                />
-              </svg>
-              <h4 className="text-2xl font-semibold text-green-800 underline decoration-wavy md:text-xl">
-                Front-end:
-              </h4>
+          <div className="flex justify-evenly col-span-12 gap-4">
+            <div className="col-span-6 flex flex-col gap-4">
+              <div className="flex flex-row items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
+                  />
+                </svg>
+                <h4 className="text-2xl font-semibold text-green-800 underline decoration-wavy md:text-xl">
+                  Front-end:
+                </h4>
+              </div>
+              <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-1 md:text-sm">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Typescript</li>
+                <li>React.js</li>
+                <li>Bootstrap</li>
+                <li>React-bootstrap</li>
+                <li>Tailwind</li>
+                <li>Next.js</li>
+              </ul>
             </div>
-            <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-1 md:text-sm">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>Typescript</li>
-              <li>React.js</li>
-              <li>Bootstrap</li>
-              <li>React-bootstrap</li>
-              <li>Tailwind</li>
-              <li>Next.js</li>
-            </ul>
-          </div>
-          <div className="col-span-6 flex flex-col gap-4">
-            <div className="flex flex-row items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
-                />
-              </svg>
-              <h4 className="text-2xl font-semibold text-green-800 underline decoration-wavy md:text-xl">
-                Back-end:
-              </h4>
+            <div className="col-span-6 flex flex-col gap-4">
+              <div className="flex flex-row items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+                  />
+                </svg>
+                <h4 className="text-2xl font-semibold text-green-800 underline decoration-wavy md:text-xl">
+                  Back-end:
+                </h4>
+              </div>
+              <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-1 md:text-sm">
+                <li>MongoDB</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Javascript</li>
+                <li>Typescript</li>
+                <li>Axios</li>
+                <li>REST API</li>
+              </ul>
             </div>
-            <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-1 md:text-sm">
-              <li>MongoDB</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>Javascript</li>
-              <li>Typescript</li>
-              <li>Axios</li>
-              <li>REST API</li>
-            </ul>
           </div>
         </div>
       </Slide>
@@ -94,13 +96,13 @@ export default function AboutMeCurrStack() {
           height={130}
           className="col-span-12 mx-auto md:hidden"
         />
-        <Image
+        {/* <Image
           src={imgThumbsUp}
           alt="Thumbs Up"
           width={130}
           height={130}
           className="hidden md:basis-1/2 md:inline-block"
-        />
+        /> */}
       </div>
     </article>
   );

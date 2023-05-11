@@ -11,7 +11,7 @@ export default function AboutMeWorkStack() {
   }, []);
 
   return (
-    <article className="flex flex-col px-2 text-indigo-900 gap-10">
+    <article className="flex flex-col px-2 text-indigo-900 gap-10 md:flex-row md:basis-1/3">
       <Slide duration={750} direction="left">
         <div className="grid grid-cols-12 px-6 shadow-md shadow-indigo-900 pb-6 bg-gradient-to-b from-white/70 to-white/10 mx-2">
           <h3 className="col-span-12 text-3xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4">
@@ -90,7 +90,7 @@ export default function AboutMeWorkStack() {
         src={imgConstruction}
         alt="Construction"
         width={windowWidth}
-        className="col-span-12 border-gray-300 border-2"
+        className="col-span-12 border-gray-300 border-2 md:hidden"
       />
     </article>
   );

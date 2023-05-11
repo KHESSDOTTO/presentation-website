@@ -33,15 +33,15 @@ export default function Comments() {
         comment: form.comment,
       });
       setForm({ commenter: "", comment: "" });
-      toast.success("Comment sent!");
+      toast.success("Comentário enviado. Obrigado!");
     } catch (err) {
       console.log(err);
-      toast.error("Something went wrong...");
+      toast.error("Algo deu errado :(... Tente novamente, por favor.");
     }
   };
 
   return (
-    <section className="bg-gradient-to-r from-gray-200 to-white row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg pt-8 pb-6 max-w-screen md:py-4 md:gap-4">
+    <section className="row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg pt-8 pb-6 max-w-screen gap-2 md:py-4 md:bg-gradient-to-r md:gap-4 md:from-slate-300 md:from-1% md:to-white">
       <Fireworks
         options={{
           rocketsPoint: {
@@ -49,6 +49,7 @@ export default function Comments() {
             max: 100,
           },
         }}
+        className="w-10/12"
       />
       <div className="flex flex-col items-center gap-2">
         <Flip duration={1000}>
@@ -61,10 +62,11 @@ export default function Comments() {
       <div className="flex flex-col items-center gap-2 md:flex-row md:justify-center md:gap-16 md:items-stretch">
         <div className="flex flex-col items-center gap-2 md:basis-1/3 md:px-4 md:justify-center">
           <p className="text-sm text-center px-4">
-            E aí, me daria uma chance? &#128521; Deixe-me sugestões, dicas,
+            E aí, quer me conhecer melhor? &#128521; Deixe-me sugestões, dicas,
             stacks e tecnologias úteis, enfim,{" "}
             <span className="font-semibold underline">qualquer coisa!!</span>{" "}
-            rs... Por favor, gostaria muito de saber a sua opinião.
+            rs... Por favor, gostaria muito de saber a sua opinião. Meus
+            contatos ao final.
           </p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +120,7 @@ export default function Comments() {
           </div>
         </form>
       </div>
-      <AttentionSeeker effect="tada" delay={6000} className="max-w-screen">
+      <AttentionSeeker effect="tada" delay={5000} className="max-w-screen">
         <button
           type="submit"
           form="comment-form"
