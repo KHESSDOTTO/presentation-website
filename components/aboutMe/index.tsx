@@ -17,7 +17,6 @@ import ApiHere from "../apiHere";
 import { PaginationOptions } from "swiper/types";
 import AboutMeExperience from "../aboutMeExperience";
 import { Fade } from "react-awesome-reveal";
-import AboutMeTotalStack from "../aboutMeTotalStack";
 
 export default function AboutMe() {
   let [nav, setNav] = useState<boolean>(false),
@@ -83,9 +82,6 @@ export default function AboutMe() {
           <SwiperSlide>
             <AboutMeWorkStack />
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <AboutMeTotalStack />
-          </SwiperSlide> */}
           <SwiperSlide>
             <ApiHere />
           </SwiperSlide>
