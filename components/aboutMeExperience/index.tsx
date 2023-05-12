@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 export default function AboutMeExperience() {
   return (
     <Fade duration={1000} delay={300}>
-      <article className="md:w-9/12 md:mx-auto md:px-16 md:py-4 md:my-4 md:bg-white/80 md:rounded-2xl">
+      <article className="md:w-9/12 md:mx-auto md:px-16 md:py-4 md:my-4 md:bg-gradient-to-r md:from-white/60 md:rounded-2xl">
         <div className="py-4 px-8 flex flex-col items-center justify-center gap-4 md:p-0">
           <div className="underline font-semibold text-xl text-gray-700 flex flex-row items-center gap-2">
             <svg
