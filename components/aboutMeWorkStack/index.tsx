@@ -18,9 +18,9 @@ export default function AboutMeWorkStack() {
 
   return (
     <Fade duration={1000}>
-      <article className="flex flex-col px-2 text-indigo-900 gap-10 md:flex-row md:justify-evenly md:items-center md:py-4">
+      <article className="flex flex-col px-2 text-indigo-900 gap-10 md:flex-row md:justify-evenly md:items-center md:py-4 md:bg-gradient-to-r md:to-white/50 md:from-gray-400/30">
         <Slide duration={750} direction="left">
-          <div className="grid grid-cols-12 px-6 shadow-md shadow-indigo-900 pb-6 bg-gradient-to-b from-white/70 to-white/10 mx-2">
+          <div className="grid grid-cols-12 px-6 shadow-md shadow-indigo-900 pb-6 bg-gradient-to-b from-white/70 to-white/10 mx-2 md:bg-gradient-to-l md:to-white/80">
             <h3 className="col-span-12 text-3xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 export default function AboutMeExperience() {
   return (
     <Fade duration={1000} delay={300}>
-      <article className="md:w-9/12 md:mx-auto md:px-16 md:py-4 md:my-4 md:bg-gradient-to-r md:from-white/60 md:rounded-2xl">
+      <article className="md:w-10/12 md:mx-auto md:px-24 md:py-4 md:my-4 md:bg-gradient-to-r md:from-white md:rounded-md md:py-4">
         <div className="py-4 px-8 flex flex-col items-center justify-center gap-4 md:p-0">
           <div className="underline font-semibold text-xl text-gray-700 flex flex-row items-center gap-2">
             <svg
@@ -40,9 +40,8 @@ export default function AboutMeExperience() {
             <p>
               Continuo estudando todos os dias, tenho cerca de 3 anos de
               contato/experiência com programação em geral e 1 ano
-              especificamente com desenvolvimento web! À procura do primeiro
-              emprego formal na área... Quer saber mais? Me chame e vamos
-              conversar!!! Meus contatos estão ao final (rodapé).{" "}
+              especificamente com desenvolvimento web. Quer saber mais? Me chame
+              e vamos conversar!!! Meus contatos estão ao final (rodapé).{" "}
               <span className="font-semibold text-xs italic">
                 *Obs: Inglês avançado.
               </span>

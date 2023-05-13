@@ -5,10 +5,30 @@ import Comments from "@/components/comments";
 import { Toaster } from "react-hot-toast";
 import Contacts from "@/components/contacts";
 import { Fade } from "react-awesome-reveal";
+import BgImgOffice from "/images/background-office-dark.jpeg";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Home() {
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
+
+  useEffect(() => {
+    setWindowHeight(window.outerHeight);
+    setWindowWidth(window.outerWidth);
+  }, []);
+
   return (
-    <>
+    <div className="max-w-screen overflow-x-hidden">
+      {/* <div className="absolute top-0 left-0 w-screen h-screen z-10">
+        <Image
+          src={BgImgOffice}
+          alt="Background"
+          width={windowWidth}
+          height={windowHeight}
+          className="w-screen h-screen"
+        />
+      </div> */}
       <Toaster />
       <NavBar />
       <Fade duration={1500} delay={300}>
@@ -21,6 +41,6 @@ export default function Home() {
         <Comments />
         <Contacts />
       </div>
-    </>
+    </div>
   );
 }

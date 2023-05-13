@@ -8,8 +8,8 @@ function FadeLeftComp() {
 
   useEffect(() => {
     setToRender(
-      <Fade direction="left" delay={700} duration={1200}>
-        <div className="mt-8 flex flex-col items-center gap-6 mx-8 h-full bg-slate-400/70 p-6 rounded-2xl shadow-lg shadow-black mb-2 md:grid md:grid-cols-12">
+      <Fade direction="left" delay={700} duration={800}>
+        <div className="mt-8 flex flex-col items-center gap-6 mx-8 h-full bg-slate-400/70 p-6 rounded-2xl shadow-lg shadow-black mb-2 md:grid md:grid-cols-12 md:rounded-lg">
           <div className="hidden md:col-span-4 md:grid md:grid-cols-4">
             <span className="text-gray-600 italic col-span-1 text-sm text-top text-center px-4 pt-8 md:block">
               Khess:
@@ -63,10 +63,10 @@ export default function WelcomeToMyWorld() {
   return (
     <section
       id="welcomeToMyWorld"
-      className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:grid md:grid-rows-2 md:h-screen md:pt-20 md:from-white md:to-gray-300`}
+      className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:bg-gradient-to-r md:grid md:grid-rows-2 md:h-screen md:pt-20 md:from-white md:to-gray-400`}
     >
       <FadeLeftComp />
-      <h1 className="hidden font-['Great_Vibes'] text-7xl mt-12 mx-auto flex-row items-center gap-4 md:flex md:row-span-2">
+      <h1 className="hidden font-['Great_Vibes'] text-8xl mt-12 mx-auto flex-row items-center gap-4 md:flex md:row-span-2">
         Khess Santomauro Dotto{" "}
       </h1>
     </section>

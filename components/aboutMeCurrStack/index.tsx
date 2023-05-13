@@ -22,9 +22,9 @@ export default function AboutMeCurrStack() {
 
   return (
     <Fade duration={1000}>
-      <article className="px-4 gap-8 flex flex-col justify-center text-green-900 md:flex-row md:justify-evenly md:py-2">
+      <article className="px-4 gap-8 flex flex-col justify-center text-green-900 md:flex-row md:justify-evenly md:py-2 md:bg-gradient-to-b md:from-gray-400/70 md:to-white md:py-8">
         <Slide direction="left" duration={750}>
-          <div className="grid grid-cols-12 shadow-lg shadow-green-900 px-6 pb-8 bg-gradient-to-b from-white/70 to-white/10 md:gap-2">
+          <div className="grid grid-cols-12 shadow-lg shadow-green-900 px-6 pb-8 bg-gradient-to-b from-white/90 to-white/10 md:gap-2 md:to-white/50">
             <h3 className="col-span-12 text-4xl font-semibold text-green-900 flex flex-row gap-2 items-center justify-start py-8 underline underline-offset-4 md:py-4 md:text-3xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ export default function AboutMeCurrStack() {
                     Front-end:
                   </h4>
                 </div>
-                <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-1 md:text-sm">
+                <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-0 md:text-sm">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
@@ -93,7 +93,7 @@ export default function AboutMeCurrStack() {
                     Back-end:
                   </h4>
                 </div>
-                <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-1 md:text-sm">
+                <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-0 md:text-sm">
                   <li>MongoDB</li>
                   <li>Node.js</li>
                   <li>Express.js</li>

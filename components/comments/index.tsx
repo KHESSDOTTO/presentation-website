@@ -41,7 +41,7 @@ export default function Comments() {
   };
 
   return (
-    <section className="row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg pt-8 pb-6 max-w-screen gap-2 md:py-4 md:bg-gradient-to-r md:gap-4 md:from-slate-300 md:from-1% md:to-white">
+    <section className="row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg pt-8 pb-6 max-w-screen gap-2 md:py-4 md:bg-gradient-to-l md:gap-4 md:from-slate-300 md:to-white">
       <Fireworks
         options={{
           rocketsPoint: {
@@ -89,28 +89,28 @@ export default function Comments() {
           id="comment-form"
           className="flex flex-col items-center justify-center gap-4 md:basis-1/3"
         >
-          <div className="flex flex-col gap-2">
-            <label htmlFor="commenter" className="text-center">
+          <div className="flex flex-col gap-1">
+            <label htmlFor="commenter" className="text-center font-bold">
               Seu nome ou identificação:
             </label>
             <input
               type="text"
               name="commenter"
               id="commenter"
-              className="border border-black rounded-md"
+              className="border border-black rounded-sm"
               value={form.commenter}
               onChange={handleChange}
               required={true}
             ></input>
           </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="comment" className="text-center">
+          <div className="flex flex-col gap-1">
+            <label htmlFor="comment" className="text-center font-bold">
               Comentário:
             </label>
             <textarea
               name="comment"
               id="comment"
-              className="border border-black rounded-md"
+              className="border border-black rounded-sm"
               rows={5}
               cols={45}
               value={form.comment}
@@ -120,7 +120,7 @@ export default function Comments() {
           </div>
         </form>
       </div>
-      <AttentionSeeker effect="tada" delay={5000} className="max-w-screen">
+      <AttentionSeeker effect="tada" delay={3000} className="max-w-screen">
         <button
           type="submit"
           form="comment-form"
