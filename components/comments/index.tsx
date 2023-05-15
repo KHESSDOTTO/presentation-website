@@ -1,15 +1,8 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
-import {
-  AttentionSeeker,
-  Flip,
-  Roll,
-  Slide,
-  Bounce,
-  Fade,
-} from "react-awesome-reveal";
+import { AttentionSeeker, Flip } from "react-awesome-reveal";
 import toast from "react-hot-toast";
-import { Fireworks, FireworksHandlers } from "@fireworks-js/react";
+import { Fireworks } from "@fireworks-js/react";
 
 export interface CommentForm {
   commenter: string;
