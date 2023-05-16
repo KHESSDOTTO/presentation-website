@@ -21,10 +21,13 @@ export default function Comments() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault();
-      await axios.post("http://localhost:3000/api/comment", {
-        commenter: form.commenter,
-        comment: form.comment,
-      });
+      await axios.post(
+        "https://presentation-website-khess.vercel.app/api/comment",
+        {
+          commenter: form.commenter,
+          comment: form.comment,
+        }
+      );
       setForm({ commenter: "", comment: "" });
       toast.success("Comentário enviado. Obrigado!");
     } catch (err) {
