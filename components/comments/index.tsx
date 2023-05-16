@@ -1,15 +1,8 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
-import {
-  AttentionSeeker,
-  Flip,
-  Roll,
-  Slide,
-  Bounce,
-  Fade,
-} from "react-awesome-reveal";
+import { AttentionSeeker, Flip } from "react-awesome-reveal";
 import toast from "react-hot-toast";
-import { Fireworks, FireworksHandlers } from "@fireworks-js/react";
+import { Fireworks } from "@fireworks-js/react";
 
 export interface CommentForm {
   commenter: string;
@@ -28,10 +21,13 @@ export default function Comments() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault();
-      await axios.post("http://localhost:3000/api/comment", {
-        commenter: form.commenter,
-        comment: form.comment,
-      });
+      await axios.post(
+        "https://presentation-website-khess.vercel.app/api/comment",
+        {
+          commenter: form.commenter,
+          comment: form.comment,
+        }
+      );
       setForm({ commenter: "", comment: "" });
       toast.success("Comentário enviado. Obrigado!");
     } catch (err) {
