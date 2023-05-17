@@ -28,7 +28,7 @@ function FadeLeftComp() {
             <legend className="italic text-3xl mb-2 font-['Great_Vibes'] md:hidden">
               Khess Santomauro Dotto
             </legend>
-            <article className="text-center bg-white/80 text-md rounded-lg p-4 md:text-sm">
+            <article className="text-center bg-white/80 text-md rounded-lg p-4 text-slate-500 md:text-sm">
               <p className="pb-2">
                 Olá! Meu nome é Khess. Sou um desenvolvedor web em busca de
                 melhorias constantes! &#128591; Abaixo, informações básicas
@@ -63,7 +63,7 @@ export default function WelcomeToMyWorld() {
   return (
     <section
       id="welcomeToMyWorld"
-      className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:bg-gradient-to-r md:grid md:grid-rows-2 md:h-screen md:pt-20 md:from-white md:to-gray-400`}
+      className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:pb-24 md:bg-gradient-to-r md:grid md:grid-rows-2 md:h-screen md:pt-20 md:from-white md:via-gray-300 md:to-gray-500/80 md:h-[120vh]`}
     >
       <FadeLeftComp />
       <h1 className="hidden font-['Great_Vibes'] text-8xl mt-12 mx-auto flex-row items-center gap-4 text-gray-800 stroke-black md:flex md:row-span-2">

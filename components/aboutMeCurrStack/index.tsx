@@ -7,12 +7,10 @@ type SlideDirection = "down" | "left" | "right" | "up";
 
 export default function AboutMeCurrStack() {
   const [imageWidth, setImageWidth] = useState(0);
-  const [slideDirection, setSlideDirection] = useState<SlideDirection>("down");
 
   useEffect(() => {
     if (window.outerWidth > 767) {
       setImageWidth(500);
-      setSlideDirection("left");
     } else {
       setImageWidth(130);
     }
@@ -20,8 +18,8 @@ export default function AboutMeCurrStack() {
 
   return (
     <Fade duration={1000}>
-      <article className="px-4 gap-8 flex flex-col justify-center text-green-900 md:flex-row md:justify-evenly md:py-2 md:bg-gradient-to-b md:from-gray-400/70 md:to-white md:py-8">
-        <Slide direction={slideDirection} duration={750}>
+      <article className="px-4 gap-8 flex flex-col justify-center text-green-900 md:flex-row md:justify-evenly md:py-2 md:bg-gradient-to-b md:from-gray-400/30 md:to-white md:py-8">
+        <Slide direction="left" duration={750}>
           <div className="grid grid-cols-12 shadow-lg shadow-green-900 px-6 pb-8 bg-gradient-to-b from-white/90 to-white/10 md:gap-2 md:to-white/50">
             <h3 className="col-span-12 text-4xl font-semibold text-green-900 flex flex-row gap-2 items-center justify-start py-8 underline underline-offset-4 md:py-4 md:text-3xl">
               <svg
@@ -104,7 +102,7 @@ export default function AboutMeCurrStack() {
             </div>
           </div>
         </Slide>
-        <div className="md:flex md:justify-center md:items-center">
+        <div className="md:flex md:justify-center md:items-center md:basis-1/5">
           <Image
             src={imgThumbsUp}
             alt="Thumbs Up"

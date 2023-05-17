@@ -17,6 +17,29 @@ export default function Comments() {
     if (window.outerWidth > 767) {
       setTextareaWidth(40);
     }
+    const comments = document.querySelector("#comments");
+    const options = { root: null, rootMargin: "0px", threshold: 0.5 };
+    const toggleOpacity = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry: IntersectionObserverEntry) => {
+        if (entry.isIntersecting) {
+          console.log("Entered");
+          setTimeout(() => {
+            comments?.classList.add("opacity-1");
+            comments?.classList.remove("opacity-0");
+          }, 300);
+        } else {
+          console.log("Leaved");
+          setTimeout(() => {
+            comments?.classList.add("opacity-0");
+            comments?.classList.remove("opacity-1");
+          }, 300);
+        }
+      });
+    };
+    if (comments !== null) {
+      const watchViewport = new IntersectionObserver(toggleOpacity, options);
+      watchViewport.observe(comments);
+    }
   }, []);
 
   const handleChange = (
@@ -46,7 +69,7 @@ export default function Comments() {
   return (
     <section
       id="comments"
-      className="row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg pt-8 pb-6 max-w-screen gap-2 md:py-4 md:bg-gradient-to-l md:gap-4 md:from-slate-300 md:to-white"
+      className="opacity-0 transition-opacity duration-[1200ms] row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black from-30% via-slate-300 to-slate-100 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:py-4 md:gap-4 md:from-35% md:via-slate-200 md:to-white md:text-slate-600"
     >
       <Fireworks
         options={{
@@ -55,22 +78,26 @@ export default function Comments() {
             max: 100,
           },
         }}
-        className="w-10/12"
+        className="w-screen h-64 md:h-80"
       />
-      <div className="flex flex-col items-center gap-2">
-        <Flip duration={1000}>
-          <h2 className="text-3xl font-bold underline animate-bounce text-gray-700">
-            Deixe um comentário!
-          </h2>
-        </Flip>
-        <p className="text-sm italic font-semibold">*Leio todos</p>
+      <div className="flex flex-col items-center gap-2 md:gap-8">
+        {/* <Flip duration={1000}> */}
+        <h2 className="font-serif text-3xl underline animate-bounce text-gray-100 md:text-4xl">
+          Deixe um comentário!
+        </h2>
+        {/* </Flip> */}
+        <p className="text-sm italic font-semibold md:font-normal md:text-slate-100">
+          *Leio todos
+        </p>
       </div>
       <div className="flex flex-col items-center gap-2 md:flex-row md:justify-center md:gap-16 md:items-stretch">
         <div className="flex flex-col items-center gap-2 md:basis-1/3 md:px-4 md:justify-center">
           <p className="text-sm text-center px-4">
             E aí, quer me conhecer melhor? &#128521; Deixe-me sugestões, dicas,
             stacks e tecnologias úteis, enfim,{" "}
-            <span className="font-semibold underline">qualquer coisa!!</span>{" "}
+            <span className="font-semibold underline text-white md:text-black">
+              qualquer coisa!!
+            </span>{" "}
             rs... Por favor, gostaria muito de saber a sua opinião. Meus
             contatos ao final.
           </p>
@@ -93,10 +120,10 @@ export default function Comments() {
         <form
           onSubmit={handleSubmit}
           id="comment-form"
-          className="flex flex-col items-center justify-center gap-4 md:basis-1/3"
+          className="flex flex-col items-center justify-center gap-4 text-slate-700 md:basis-1/3"
         >
           <div className="flex flex-col gap-1">
-            <label htmlFor="commenter" className="text-center font-bold">
+            <label htmlFor="commenter" className="text-center">
               Seu nome ou identificação:
             </label>
             <input
@@ -110,7 +137,7 @@ export default function Comments() {
             ></input>
           </div>
           <div className="flex flex-col gap-1">
-            <label htmlFor="comment" className="text-center font-bold">
+            <label htmlFor="comment" className="text-center">
               Comentário:
             </label>
             <textarea

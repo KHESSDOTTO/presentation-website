@@ -46,9 +46,9 @@ export default function NavBar() {
       </div>
       <div className="w-1/3 flex justify-center items-center text-center">
         {/* desktop link */}
-        <Link
+        {/* <Link
           href="#thankYou"
-          className="hidden flex flex-row justify-center items-center gap-2 hover:text-yellow-600 hover:underline hover:text-lg transition-all md:flex L-Affiliate-Tagged"
+          className="flex flex-row justify-center items-center gap-2 hover:text-yellow-600 hover:underline hover:text-lg transition-all L-Affiliate-Tagged"
           scroll={false}
         >
           <svg
@@ -64,10 +64,10 @@ export default function NavBar() {
             />
           </svg>
           <span className="">Contato</span>
-        </Link>
+        </Link> */}
         <Link
           href="#comments"
-          className="flex flex-row justify-center items-center gap-2 hover:text-yellow-600 hover:underline hover:text-lg transition-all md:flex md:hidden L-Affiliate-Tagged"
+          className="flex flex-row justify-center items-center gap-2 hover:text-yellow-600 hover:underline hover:text-lg transition-all md:flex L-Affiliate-Tagged"
           scroll={false}
         >
           <svg
