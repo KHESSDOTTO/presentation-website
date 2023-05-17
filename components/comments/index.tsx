@@ -108,7 +108,7 @@ export default function Comments() {
               id="comment"
               className="border border-black rounded-sm"
               rows={5}
-              cols={45}
+              cols={40}
               value={form.comment}
               onChange={handleChange}
               required={true}

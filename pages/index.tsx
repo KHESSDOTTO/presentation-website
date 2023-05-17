@@ -19,16 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="max-w-screen overflow-x-hidden">
-      {/* <div className="absolute top-0 left-0 w-screen h-screen z-10">
-        <Image
-          src={BgImgOffice}
-          alt="Background"
-          width={windowWidth}
-          height={windowHeight}
-          className="w-screen h-screen"
-        />
-      </div> */}
+    <div className="max-w-screen overflow-x-hidden text-black">
       <Toaster />
       <NavBar />
       <Fade duration={1500} delay={300}>
