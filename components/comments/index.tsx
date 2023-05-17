@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { AttentionSeeker, Flip } from "react-awesome-reveal";
 import toast from "react-hot-toast";
@@ -11,6 +11,13 @@ export interface CommentForm {
 
 export default function Comments() {
   const [form, setForm] = useState<CommentForm>({ commenter: "", comment: "" });
+  const [textareaWidth, setTextareaWidth] = useState(30);
+
+  useEffect(() => {
+    if (window.outerWidth > 767) {
+      setTextareaWidth(40);
+    }
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -37,7 +44,10 @@ export default function Comments() {
   };
 
   return (
-    <section className="row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg pt-8 pb-6 max-w-screen gap-2 md:py-4 md:bg-gradient-to-l md:gap-4 md:from-slate-300 md:to-white">
+    <section
+      id="comments"
+      className="row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 from-20% to-white shadow-lg pt-8 pb-6 max-w-screen gap-2 md:py-4 md:bg-gradient-to-l md:gap-4 md:from-slate-300 md:to-white"
+    >
       <Fireworks
         options={{
           rocketsPoint: {
@@ -49,7 +59,7 @@ export default function Comments() {
       />
       <div className="flex flex-col items-center gap-2">
         <Flip duration={1000}>
-          <h2 className="text-3xl font-bold underline animate-bounce">
+          <h2 className="text-3xl font-bold underline animate-bounce text-gray-700">
             Deixe um comentário!
           </h2>
         </Flip>
@@ -108,7 +118,7 @@ export default function Comments() {
               id="comment"
               className="border border-black rounded-sm"
               rows={5}
-              cols={40}
+              cols={textareaWidth}
               value={form.comment}
               onChange={handleChange}
               required={true}

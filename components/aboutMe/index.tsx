@@ -28,7 +28,7 @@ export default function AboutMe() {
       setPag(true);
       setNav(false);
     } else {
-      setPag({ type: "fraction" });
+      setPag(true);
       setNav(true);
     }
   }, []);

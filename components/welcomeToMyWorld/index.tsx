@@ -66,7 +66,7 @@ export default function WelcomeToMyWorld() {
       className={`bg-gradient-to-b from-gray-100 to-gray-300 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:bg-gradient-to-r md:grid md:grid-rows-2 md:h-screen md:pt-20 md:from-white md:to-gray-400`}
     >
       <FadeLeftComp />
-      <h1 className="hidden font-['Great_Vibes'] text-8xl mt-12 mx-auto flex-row items-center gap-4 md:flex md:row-span-2">
+      <h1 className="hidden font-['Great_Vibes'] text-8xl mt-12 mx-auto flex-row items-center gap-4 text-gray-800 stroke-black md:flex md:row-span-2">
         Khess Santomauro Dotto{" "}
       </h1>
     </section>

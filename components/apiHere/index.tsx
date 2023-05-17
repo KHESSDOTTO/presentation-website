@@ -47,7 +47,7 @@ export default function ApiHere() {
         delay={200}
         className="self-start md:self-center"
       >
-        <div className="flex flex-col gap-2 self-start px-8 md:px-0">
+        <div className="flex flex-col gap-2 self-start px-8 text-gray-800 md:px-0">
           <div className="self-start flex flex-row gap-2 items-center font-semibold underline">
             <svg
               xmlns="http://www.w3.org/2000/svg"

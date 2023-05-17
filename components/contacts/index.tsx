@@ -4,10 +4,10 @@ export default function Contacts() {
   return (
     <section
       id="thankYou"
-      className={`border-t-2 border-gray-800 bg-white self-end`}
+      className={`border-t-2 border-gray-800 bg-white text-gray-800 self-end`}
     >
       <div className="bg-orange-900/30 pl-8 py-4 md:py-2">
-        <h2 className="text-lg font-bold underline mb-2 md:text-md">
+        <h2 className="text-lg font-bold underline mb-2 text-black md:text-md">
           Contatos:
         </h2>
         <div className="md:flex md:flex-wrap md:text-xs md:gap-2 md:font-semibold">
