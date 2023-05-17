@@ -1,14 +1,9 @@
-import {
-  Fade,
-  Slide,
-  Bounce,
-  Flip,
-  AttentionSeeker,
-} from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import imgThumbsUp from "../../images/thumbs-up.238x256.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { SlideDirection } from "react-awesome-reveal";
+
+type SlideDirection = "down" | "left" | "right" | "up";
 
 export default function AboutMeCurrStack() {
   const [imageWidth, setImageWidth] = useState(0);
