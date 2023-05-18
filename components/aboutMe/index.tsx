@@ -36,10 +36,10 @@ export default function AboutMe() {
   return (
     <section
       id="aboutMe"
-      className="min-h-screen pt-16 grid grid-rows-5 border-b-4 border-gray-400 border-b-gray-200 bg-gradient-to-b from-10% from-gray-300 to-white md:from-gray-400 md:pt-20 md:bg-gradient-to-r md:h-[110vh]"
+      className="min-h-screen pt-16 grid grid-rows-5 border-b-4 border-gray-400 border-b-gray-200 bg-gradient-to-b from-10% from-gray-300 to-white md:pt-20 md:bg-gradient-to-r md:from-white md:via-gray-300 md:to-gray-500/80 md:h-[120vh]"
     >
       <div>
-        <div className="border-b-4 border-b-black flex flex-col items-center justify-center gap-4 bg-gray-100 rounded-t-full text-center mx-2 p-2 pt-8 shadow-xl md:pt-0 md:mx-48">
+        <div className="border-b-2 border-b-black flex flex-col items-center justify-center gap-4 bg-gray-100 rounded-t-full text-center mx-2 p-2 pt-8 shadow-lg shadow-gray-700 md:pt-0 md:mx-48">
           <div className="flex flex-start items-center gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"

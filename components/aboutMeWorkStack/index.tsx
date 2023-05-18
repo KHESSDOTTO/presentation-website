@@ -18,8 +18,12 @@ export default function AboutMeWorkStack() {
 
   return (
     <Fade duration={1000}>
-      <article className="flex flex-col px-2 text-indigo-900 gap-10 md:flex-row md:justify-evenly md:items-center md:py-4 md:bg-gradient-to-r md:to-white/50 md:from-gray-400">
-        <Slide duration={750} direction="left">
+      <article className="flex flex-col px-2 text-indigo-900 gap-10 md:grid md:grid-cols-12 md:items-center md:py-12">
+        <Slide
+          duration={750}
+          direction="left"
+          className="col-start-2 col-end-8"
+        >
           <div className="grid grid-cols-12 px-6 shadow-md shadow-indigo-900 pb-6 bg-gradient-to-b from-white/70 to-white/10 mx-2 md:bg-gradient-to-l md:to-white/80">
             <h3 className="col-span-12 text-3xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4">
               <svg
@@ -93,7 +97,7 @@ export default function AboutMeWorkStack() {
             </div>
           </div>
         </Slide>
-        <div className="md:flex md:justify-center md:items-center md:p-6 md:shadow-xl md:shadow-black md:bg-gray-200 md:rounded-md">
+        <div className="md:flex md:justify-center md:items-center md:p-6 md:shadow-md md:shadow-black md:bg-transparent md:rounded-md md:col-start-8 md:col-end-12">
           <Image
             src={imgConstruction}
             alt="Construction"
@@ -104,7 +108,7 @@ export default function AboutMeWorkStack() {
             src={imgConstruction}
             alt="Construction"
             width={450}
-            className="hidden col-span-12 border-gray-500 border-2 shadow-black shadow-md md:inline-block"
+            className="hidden col-span-12 border-gray-500 border-2 shadow-black shadow-lg md:rounded-md md:inline-block"
           />
         </div>
       </article>

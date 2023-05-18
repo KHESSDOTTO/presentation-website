@@ -39,7 +39,7 @@ export default function ApiHere() {
 
   return (
     <section
-      className={`flex flex-col items-center justify-center gap-10 h-full md:flex-row md:justify-evenly md:gap-0 md:bg-gradient-to-l md:from-gray-400 md:to-white/70`}
+      className={`flex flex-col items-center justify-center gap-10 h-full md:flex-row md:justify-evenly md:gap-0`}
     >
       <Slide
         direction="down"

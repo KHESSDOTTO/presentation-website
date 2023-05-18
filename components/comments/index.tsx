@@ -18,21 +18,17 @@ export default function Comments() {
       setTextareaWidth(40);
     }
     const comments = document.querySelector("#comments");
-    const options = { root: null, rootMargin: "0px", threshold: 0.5 };
+    const options = { root: null, rootMargin: "0px", threshold: 0.3 };
     const toggleOpacity = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry: IntersectionObserverEntry) => {
         if (entry.isIntersecting) {
-          console.log("Entered");
-          setTimeout(() => {
-            comments?.classList.add("opacity-1");
-            comments?.classList.remove("opacity-0");
-          }, 300);
+          // console.log("Entered");
+          comments?.classList.add("opacity-1");
+          comments?.classList.remove("opacity-0");
         } else {
-          console.log("Leaved");
-          setTimeout(() => {
-            comments?.classList.add("opacity-0");
-            comments?.classList.remove("opacity-1");
-          }, 300);
+          // console.log("Leaved");
+          comments?.classList.add("opacity-0");
+          comments?.classList.remove("opacity-1");
         }
       });
     };
@@ -69,7 +65,7 @@ export default function Comments() {
   return (
     <section
       id="comments"
-      className="opacity-0 transition-opacity duration-[1200ms] row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black from-30% via-slate-300 to-slate-100 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:py-4 md:gap-4 md:from-35% md:via-slate-200 md:to-white md:text-slate-600"
+      className="opacity-0 transition-opacity duration-1000 row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black from-30% via-slate-300 to-slate-100 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:py-4 md:gap-4 md:from-35% md:via-slate-200 md:to-white md:text-slate-600"
     >
       <Fireworks
         options={{
@@ -82,7 +78,7 @@ export default function Comments() {
       />
       <div className="flex flex-col items-center gap-2 md:gap-8">
         {/* <Flip duration={1000}> */}
-        <h2 className="font-serif text-3xl underline animate-bounce text-gray-100 md:text-4xl">
+        <h2 className="font-serif text-3xl underline animate-bounce text-gray-100 md:text-5xl">
           Deixe um comentário!
         </h2>
         {/* </Flip> */}
@@ -99,7 +95,7 @@ export default function Comments() {
               qualquer coisa!!
             </span>{" "}
             rs... Por favor, gostaria muito de saber a sua opinião. Meus
-            contatos ao final.
+            contatos ao final (rodapé).
           </p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +149,7 @@ export default function Comments() {
           </div>
         </form>
       </div>
-      <AttentionSeeker effect="tada" delay={3000} className="max-w-screen">
+      <AttentionSeeker effect="tada" delay={4000} className="max-w-screen">
         <button
           type="submit"
           form="comment-form"

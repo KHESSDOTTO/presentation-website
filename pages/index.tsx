@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="max-w-screen overflow-x-hidden text-slate-600">
+    <div className="max-w-screen overflow-x-hidden text-slate-700 md:bg-gray-400">
       <Toaster />
       <NavBar />
       <Fade duration={1500} delay={300}>
