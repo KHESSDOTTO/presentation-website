@@ -39,7 +39,7 @@ export default function ApiHere() {
 
   return (
     <section
-      className={`flex flex-col items-center justify-center gap-10 h-full md:flex-row md:justify-evenly md:gap-0 md:bg-gradient-to-l md:from-gray-400 md:to-white/70`}
+      className={`flex flex-col items-center justify-center gap-10 h-full md:flex-row md:justify-evenly md:gap-0`}
     >
       <Slide
         direction="down"
@@ -47,7 +47,7 @@ export default function ApiHere() {
         delay={200}
         className="self-start md:self-center"
       >
-        <div className="flex flex-col gap-2 self-start px-8 md:px-0">
+        <div className="flex flex-col gap-2 self-start px-8 text-gray-800 md:px-0">
           <div className="self-start flex flex-row gap-2 items-center font-semibold underline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
