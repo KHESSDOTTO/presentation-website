@@ -14,9 +14,9 @@ function FadeLeftComp() {
       entries.forEach((entry: IntersectionObserverEntry) => {
         if (entry.isIntersecting) {
           welcome?.classList.remove("opacity-0");
-        } else {
-          welcome?.classList.add("opacity-0");
         }
+        if (!entry.isIntersecting && window.outerWidth > 767)
+          welcome?.classList.add("opacity-0");
       });
     };
     if (welcome !== null) {
@@ -26,7 +26,7 @@ function FadeLeftComp() {
 
     setToRender(
       <Fade direction="left" delay={700} duration={800}>
-        <div className="mt-8 flex flex-col items-center gap-6 mx-8 h-full bg-slate-400/80 p-6 rounded-2xl shadow-lg shadow-black mb-2 md:grid md:grid-cols-12 md:rounded-lg">
+        <div className="mt-8 flex flex-col items-center gap-6 mx-8 h-full bg-slate-400/60 p-6 rounded-2xl shadow-lg shadow-black mb-2 md:grid md:grid-cols-12 md:rounded-lg">
           <div className="hidden md:col-span-4 md:grid md:grid-cols-4">
             <span className="text-gray-600 italic col-span-1 text-sm text-top text-center px-4 pt-8 md:block">
               Khess:
@@ -80,7 +80,7 @@ export default function WelcomeToMyWorld() {
   return (
     <section
       id="welcomeToMyWorld"
-      className={`relative opacity-0 transition-opacity duration-[2000ms] bg-gradient-to-b from-gray-100 to-gray-300 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:pb-24 md:bg-gradient-to-r md:grid md:grid-rows-2 md:pt-20 md:from-slate-300 md:to-slate-500/70 md:h-[120vh]`}
+      className={`relative opacity-0 transition-opacity duration-[2000ms] bg-gradient-to-b from-gray-100 from-10% to-gray-400 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:pb-24 md:bg-gradient-to-r md:grid md:grid-rows-2 md:pt-20 md:from-slate-300 md:to-blue-300/70 md:h-[120vh]`}
     >
       <div className="hidden bg-cover absolute h-full w-full md:inline-block">
         <Image src={BgCloud} alt="Waterfall" className="w-full h-full" />

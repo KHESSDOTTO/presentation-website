@@ -65,9 +65,9 @@ export default function Comments() {
   return (
     <section
       id="comments"
-      className="relative opacity-0 transition-opacity duration-[3000ms] row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black from-30% via-slate-300 to-slate-100 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:bg-white md:py-4 md:gap-4 md:text-slate-600"
+      className="relative opacity-0 transition-opacity duration-[1500ms] text-white row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black/10 from-30% via-blue-300/10 to-blue-100/10 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:bg-white md:py-4 md:gap-4 md:text-slate-600"
     >
-      <div className="absolute w-screen h-full z-1">
+      <div className="absolute w-screen h-full z-0">
         <Image src={BgNightsky} alt="Nightsky" className="cover h-5/6 w-full" />
       </div>
       <Fireworks
@@ -79,18 +79,18 @@ export default function Comments() {
         }}
         className="z-10 w-screen h-64 md:h-[75vh] xl:h-64"
       />
-      <div className="flex flex-col items-center gap-2 md:gap-8">
+      <div className="flex flex-col items-center gap-2 text-white md:text-slate-100 md:gap-8">
         {/* <Flip duration={1000}> */}
-        <h2 className="font-serif text-3xl underline animate-bounce text-white md:text-5xl">
+        <h2 className="font-serif text-3xl underline animate-bounce md:text-5xl">
           Deixe um comentário!
         </h2>
         {/* </Flip> */}
-        <p className="text-sm italic font-semibold md:font-normal md:text-slate-800">
+        <p className="text-sm italic font-semibold z-0 md:font-normal text-gray-100 md:text-slate-800">
           *Leio todos
         </p>
       </div>
-      <div className="flex flex-col items-center gap-2 md:flex-row md:justify-center md:gap-16 md:items-stretch">
-        <div className="flex flex-col items-center gap-2 md:basis-1/3 md:px-4 md:justify-center">
+      <div className="flex flex-col items-center z-0 gap-2 md:flex-row md:justify-center md:gap-16 md:items-stretch">
+        <div className="flex flex-col items-center gap-2 text-gray-100 md:text-slate-600 md:basis-1/3 md:px-4 md:justify-center">
           <p className="text-sm text-center px-4">
             E aí, quer me conhecer melhor? &#128521; Deixe-me sugestões, dicas,
             stacks e tecnologias úteis, enfim,{" "}
