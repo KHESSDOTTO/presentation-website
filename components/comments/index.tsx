@@ -3,6 +3,8 @@ import axios from "axios";
 import { AttentionSeeker, Flip } from "react-awesome-reveal";
 import toast from "react-hot-toast";
 import { Fireworks } from "@fireworks-js/react";
+import BgNightsky from "../../images/bg-nightsky.png";
+import Image from "next/image";
 
 export interface CommentForm {
   commenter: string;
@@ -23,12 +25,10 @@ export default function Comments() {
       entries.forEach((entry: IntersectionObserverEntry) => {
         if (entry.isIntersecting) {
           // console.log("Entered");
-          comments?.classList.add("opacity-1");
           comments?.classList.remove("opacity-0");
         } else {
           // console.log("Leaved");
           comments?.classList.add("opacity-0");
-          comments?.classList.remove("opacity-1");
         }
       });
     };
@@ -65,8 +65,11 @@ export default function Comments() {
   return (
     <section
       id="comments"
-      className="opacity-0 transition-opacity duration-1000 row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black from-30% via-slate-300 to-slate-100 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:py-4 md:gap-4 md:from-35% md:via-slate-200 md:to-white md:text-slate-600"
+      className="relative opacity-0 transition-opacity duration-[3000ms] row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black from-30% via-slate-300 to-slate-100 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:bg-white md:py-4 md:gap-4 md:text-slate-600"
     >
+      <div className="absolute w-screen h-full z-1">
+        <Image src={BgNightsky} alt="Nightsky" className="cover h-5/6 w-full" />
+      </div>
       <Fireworks
         options={{
           rocketsPoint: {
@@ -74,15 +77,15 @@ export default function Comments() {
             max: 100,
           },
         }}
-        className="w-screen h-64 md:h-[75vh] xl:h-64"
+        className="z-10 w-screen h-64 md:h-[75vh] xl:h-64"
       />
       <div className="flex flex-col items-center gap-2 md:gap-8">
         {/* <Flip duration={1000}> */}
-        <h2 className="font-serif text-3xl underline animate-bounce text-gray-100 md:text-5xl">
+        <h2 className="font-serif text-3xl underline animate-bounce text-white md:text-5xl">
           Deixe um comentário!
         </h2>
         {/* </Flip> */}
-        <p className="text-sm italic font-semibold md:font-normal md:text-slate-100">
+        <p className="text-sm italic font-semibold md:font-normal md:text-slate-800">
           *Leio todos
         </p>
       </div>
