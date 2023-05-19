@@ -6,21 +6,23 @@ import { useEffect, useState } from "react";
 type SlideDirection = "down" | "left" | "right" | "up";
 
 export default function AboutMeCurrStack() {
-  const [imageWidth, setImageWidth] = useState(0);
+  const [imageWidth, setImageWidth] = useState(130);
+  const [fadeDirection, setFadeDirection] = useState<SlideDirection>("left");
+  const [fadeDuration, setFadeDuration] = useState(1000);
 
   useEffect(() => {
     if (window.outerWidth > 767) {
       setImageWidth(500);
-    } else {
-      setImageWidth(130);
+      setFadeDirection("right");
+      setFadeDuration(2000);
     }
   }, []);
 
   return (
-    <Fade duration={1000}>
+    <Fade duration={fadeDuration}>
       <article className="px-4 gap-8 flex flex-col justify-center text-green-900 md:items-center md:grid md:grid-cols-12 md:py-2 md:py-8">
         <Slide
-          direction="left"
+          direction={fadeDirection}
           duration={750}
           className="md:col-start-2 md:col-end-8"
         >
