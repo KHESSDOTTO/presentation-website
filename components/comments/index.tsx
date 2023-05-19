@@ -65,7 +65,7 @@ export default function Comments() {
   return (
     <section
       id="comments"
-      className="relative opacity-0 transition-opacity duration-[1500ms] text-white row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black/10 from-30% via-blue-300/10 to-blue-100/10 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:bg-white md:py-4 md:gap-4 md:text-slate-600"
+      className="relative opacity-0 transition-opacity duration-[1500ms] text-white row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black from-30% via-slate-200 to-white shadow-lg pt-8 pb-6 max-w-screen gap-0 md:bg-white md:py-4 md:gap-4 md:text-slate-600"
     >
       <div className="absolute w-screen h-full z-0">
         <Image src={BgNightsky} alt="Nightsky" className="cover h-5/6 w-full" />

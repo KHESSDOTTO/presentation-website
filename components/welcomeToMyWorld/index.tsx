@@ -80,7 +80,7 @@ export default function WelcomeToMyWorld() {
   return (
     <section
       id="welcomeToMyWorld"
-      className={`relative opacity-0 transition-opacity duration-[2000ms] bg-gradient-to-b from-gray-100 from-10% to-gray-400 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:pb-24 md:bg-gradient-to-r md:grid md:grid-rows-2 md:pt-20 md:from-slate-300 md:to-blue-300/70 md:h-[120vh]`}
+      className={`relative opacity-0 transition-opacity duration-[2000ms] bg-gradient-to-b from-white from-10% to-gray-300 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:pb-24 md:bg-gradient-to-r md:grid md:grid-rows-2 md:pt-20 md:from-slate-300 md:to-blue-300/70 md:h-[120vh]`}
     >
       <div className="hidden bg-cover absolute h-full w-full md:inline-block">
         <Image src={BgCloud} alt="Waterfall" className="w-full h-full" />
