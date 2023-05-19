@@ -74,7 +74,7 @@ export default function Comments() {
             max: 100,
           },
         }}
-        className="w-screen h-64 md:h-80"
+        className="w-screen h-64 md:h-[75vh] xl:h-64"
       />
       <div className="flex flex-col items-center gap-2 md:gap-8">
         {/* <Flip duration={1000}> */}
