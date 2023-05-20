@@ -76,7 +76,7 @@ export default function AboutMeDescription() {
             </svg>
             <span className="font-semibold">Portfolio:</span>{" "}
             <a
-              href="https://1drv.ms/w/s!ArXufD8dYFs-znz5Ppuce45XeQ4_?e=v4RDWk"
+              href="https://1drv.ms/b/s!ArXufD8dYFs-0QlcX0pLmw5dTREV?e=SjvV8l"
               target="_blank"
               className="text-sm text-blue-800 L-Affiliate-Tagged"
             >
@@ -98,7 +98,7 @@ export default function AboutMeDescription() {
             </svg>
             <span className="font-semibold">CV:</span>{" "}
             <a
-              href="https://1drv.ms/w/s!ArXufD8dYFs-znmehF9I_3irDvna?e=SaYagu"
+              href="https://1drv.ms/b/s!ArXufD8dYFs-0QdP9-XxPZ7YoONn?e=6hEABf"
               target="_blank"
               className="text-sm text-blue-800 L-Affiliate-Tagged"
             >
