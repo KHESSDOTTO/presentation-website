@@ -28,8 +28,8 @@ export default function AboutMeExperience() {
               Em meus estudos, fiz um curso de VBA para automatizar processos
               manuais que tínhamos no banco. Pelos próximos 2 anos, mantive
               contato próximo com a programação (VBA e Python). Era a parte que
-              eu mais gostava no meu trabalho!! Bem como desenvolver planilhas
-              de cálculos intuitivas para uso da equipe.
+              eu mais gostava no meu trabalho, bem como desenvolver planilhas de
+              cálculos intuitivas para uso da equipe!
             </p>
             <p>
               A partir desse momento, cursei matérias eletivas de
