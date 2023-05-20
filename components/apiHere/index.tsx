@@ -39,7 +39,7 @@ export default function ApiHere() {
 
   return (
     <section
-      className={`flex flex-col items-center justify-center gap-10 h-full md:flex-row md:justify-evenly md:gap-0`}
+      className={`flex flex-col items-center justify-center gap-10 h-full md:flex-row md:justify-evenly md:gap-0 xl:h-[70vh]`}
     >
       <Slide
         direction="down"
@@ -67,7 +67,7 @@ export default function ApiHere() {
         </div>
       </Slide>
       <div className="hidden md:inline-block md:h-2/5 md:border-l-2 md:border-gray-800 md:mr-4"></div>
-      <div className="rounded-xl bg-white/60 w-11/12 h-2/3 border-2 flex flex-col gap-2 justify-center items-center md:w-3/5 md:h-5/6">
+      <div className="rounded-xl bg-white/60 w-11/12 h-2/3 border-2 flex flex-col gap-2 justify-center items-center md:w-3/5 md:h-5/6 lg:h-2/3">
         <GoogleMap
           center={{ lat: -23.642429988253433, lng: -46.662051583212225 }}
           zoom={12}

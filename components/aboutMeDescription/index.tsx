@@ -19,7 +19,7 @@ export default function AboutMeDescription() {
           capacidade para trazer benefícios à sociedade e às pessoas em geral.
         </p>
       </div>
-      <div className=" md:h-5/6 border-b-2 py-8 border-black md:basis-1/3 md:flex md:flex-col md:px-10 md:h-full md:border-b-0">
+      <div className=" md:h-5/6 border-b-2 py-8 border-black md:basis-1/3 md:flex md:flex-col md:px-10 md:border-b-0">
         <h3 className="underline font-semibold mb-4 text-xl text-gray-700 flex flex-row items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function AboutMeDescription() {
           </li>
         </ul>
       </div>
-      <div className="py-8 gap-4 md:h-5/6 md:basis-1/3 md:flex md:flex-col md:px-10 md:h-full md:border-b-0">
+      <div className="py-8 gap-4 md:h-5/6 md:basis-1/3 md:flex md:flex-col md:px-10 md:border-b-0">
         <h3 className="underline font-semibold mb-4 text-xl text-gray-700 flex flex-row items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
