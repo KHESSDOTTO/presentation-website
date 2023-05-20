@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { AttentionSeeker, Flip } from "react-awesome-reveal";
+import { AttentionSeeker } from "react-awesome-reveal";
 import toast from "react-hot-toast";
 import { Fireworks } from "@fireworks-js/react";
 import BgNightsky from "../../images/bg-nightsky.png";

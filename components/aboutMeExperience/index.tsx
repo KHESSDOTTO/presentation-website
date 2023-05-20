@@ -16,7 +16,7 @@ export default function AboutMeExperience() {
             </svg>
             <h3>Minha história/experiência</h3>
           </div>
-          <div className="flex flex-col gap-4 text-sm leading-relaxed indent-4 text-justify md:text-md md:leading-5">
+          <div className="flex flex-col gap-4 text-sm leading-relaxed indent-4 text-justify md:text-md md:leading-5 xl:px-12">
             <p>
               Comecei minha carreira no mercado financeiro com uma oportunidade
               que recebi através da minha faculdade (FGV)! Apesar de possuir um
