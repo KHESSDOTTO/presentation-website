@@ -65,11 +65,11 @@ export default function Comments() {
   return (
     <section
       id="comments"
-      className="relative opacity-0 transition-opacity duration-[1500ms] text-white row-span-3 flex flex-col items-center justify-evenly bg-gradient-to-b text-slate-300 from-black from-30% via-slate-200 to-white shadow-lg pt-8 pb-6 max-w-screen gap-0 md:bg-white md:py-4 md:gap-4 md:text-slate-600"
+      className="relative opacity-0 transition-opacity duration-500 text-white row-span-3 flex flex-col items-center justify-evenly text-slate-300 from-black from-30% via-slate-200/30 to-white/30 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:py-4 md:gap-4 md:text-white bg-[url('../images/bg-nightsky.png')] bg-fixed bg-cover bg-center"
     >
-      <div className="absolute w-screen h-full z-0">
+      {/* <div className="absolute w-screen h-full z-0">
         <Image src={BgNightsky} alt="Nightsky" className="cover h-5/6 w-full" />
-      </div>
+      </div> */}
       <Fireworks
         options={{
           rocketsPoint: {
@@ -79,22 +79,22 @@ export default function Comments() {
         }}
         className="z-10 w-screen h-64 md:h-[75vh] xl:h-64"
       />
-      <div className="flex flex-col items-center gap-2 text-white md:text-slate-100 md:gap-8">
+      <div className="flex flex-col items-center gap-2 text-white md:text-white md:gap-8">
         {/* <Flip duration={1000}> */}
         <h2 className="font-serif text-3xl underline animate-bounce md:text-5xl">
           Deixe um comentário!
         </h2>
         {/* </Flip> */}
-        <p className="text-sm italic font-semibold z-0 md:font-normal text-gray-100 md:text-slate-800">
+        <p className="text-sm italic font-semibold z-0 md:font-normal text-gray-100 md:text-slate-200">
           *Leio todos
         </p>
       </div>
       <div className="flex flex-col items-center z-0 gap-2 md:flex-row md:justify-center md:gap-16 md:items-stretch">
-        <div className="flex flex-col items-center gap-2 text-gray-100 md:text-slate-600 md:basis-1/3 md:px-4 md:justify-center">
+        <div className="flex flex-col items-center gap-2 text-gray-100 md:text-slate-200 md:basis-1/3 md:px-4 md:justify-center">
           <p className="text-sm text-center px-4">
             E aí, quer me conhecer melhor? &#128521; Deixe-me sugestões, dicas,
             stacks e tecnologias úteis, enfim,{" "}
-            <span className="font-semibold underline text-white md:text-black">
+            <span className="font-semibold underline text-white md:text-white">
               qualquer coisa!!
             </span>{" "}
             rs... Por favor, gostaria muito de saber a sua opinião. Meus
@@ -122,7 +122,7 @@ export default function Comments() {
           className="flex flex-col items-center justify-center gap-4 text-slate-700 md:basis-1/3"
         >
           <div className="flex flex-col gap-1">
-            <label htmlFor="commenter" className="text-center">
+            <label htmlFor="commenter" className="text-center text-slate-200">
               Seu nome ou identificação:
             </label>
             <input
@@ -136,7 +136,7 @@ export default function Comments() {
             ></input>
           </div>
           <div className="flex flex-col gap-1">
-            <label htmlFor="comment" className="text-center">
+            <label htmlFor="comment" className="text-center text-slate-200">
               Comentário:
             </label>
             <textarea
