@@ -2,13 +2,47 @@ import { Fade, Slide } from "react-awesome-reveal";
 import imgThumbsUp from "../../images/thumbs-up.238x256.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import htmlLogo from "../../images/HTML5-logo.svg";
+import cssLogo from "../../images/css-logo.svg";
+import jsLogo from "../../images/javascript-logo.svg";
+import tsLogo from "../../images/typescript-logo.svg";
+import reactLogo from "../../images/react-logo.svg";
+import bootstrapLogo from "../../images/bootstrap-logo.svg";
+import tailwindLogo from "../../images/tailwind-logo.svg";
+import nextLogo from "../../images/next-logo.svg";
+import mongodbLogo from "../../images/mongodb-logo.svg";
+import nodeLogo from "../../images/node-logo.svg";
+import expressLogo from "../../images/express-logo.svg";
+import restapiImg from "../../images/api-img.svg";
+import { LiWithLogo, stackList } from "../smallComp/liWithLogo";
 
-type SlideDirection = "down" | "left" | "right" | "up";
+export type SlideDirection = "down" | "left" | "right" | "up";
 
 export default function AboutMeCurrStack() {
-  const [imageWidth, setImageWidth] = useState(130);
-  const [fadeDirection, setFadeDirection] = useState<SlideDirection>("left");
-  const [fadeDuration, setFadeDuration] = useState(1000);
+  const [imageWidth, setImageWidth] = useState(130),
+    [fadeDirection, setFadeDirection] = useState<SlideDirection>("left"),
+    [fadeDuration, setFadeDuration] = useState(1000);
+
+  const currStackFront: stackList[] = [
+      { text: "HTML", imgLogo: htmlLogo },
+      { text: "CSS", imgLogo: cssLogo },
+      { text: "Javascript", imgLogo: jsLogo },
+      { text: "Typescript", imgLogo: tsLogo },
+      { text: "React.js", imgLogo: reactLogo },
+      { text: "Bootstrap", imgLogo: bootstrapLogo },
+      { text: "Tailwind", imgLogo: tailwindLogo },
+      { text: "Next.js", imgLogo: nextLogo },
+    ],
+    currStackBack: stackList[] = [
+      { text: "MongoDB", imgLogo: mongodbLogo },
+      { text: "Node.js", imgLogo: nodeLogo },
+      { text: "Express", imgLogo: expressLogo },
+      { text: "Javascript", imgLogo: jsLogo },
+      { text: "Typescript", imgLogo: tsLogo },
+      { text: "REST API", imgLogo: restapiImg },
+    ];
+
+  const imgSize = 17;
 
   useEffect(() => {
     if (window.outerWidth > 767) {
@@ -64,15 +98,15 @@ export default function AboutMeCurrStack() {
                   </h4>
                 </div>
                 <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-0 md:text-sm">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                  <li>Typescript</li>
-                  <li>React.js</li>
-                  <li>Bootstrap</li>
-                  <li>React-bootstrap</li>
-                  <li>Tailwind</li>
-                  <li>Next.js</li>
+                  {currStackFront.map((e) => {
+                    return (
+                      <LiWithLogo
+                        text={e.text}
+                        imgLogo={e.imgLogo}
+                        imgSize={imgSize}
+                      />
+                    );
+                  })}
                 </ul>
               </div>
               <div className="col-span-6 flex flex-col gap-4">
@@ -96,13 +130,15 @@ export default function AboutMeCurrStack() {
                   </h4>
                 </div>
                 <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-0 md:text-sm">
-                  <li>MongoDB</li>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>Javascript</li>
-                  <li>Typescript</li>
-                  <li>Axios</li>
-                  <li>REST API</li>
+                  {currStackBack.map((e) => {
+                    return (
+                      <LiWithLogo
+                        text={e.text}
+                        imgLogo={e.imgLogo}
+                        imgSize={imgSize}
+                      />
+                    );
+                  })}
                 </ul>
               </div>
             </div>

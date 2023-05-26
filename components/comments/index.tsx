@@ -3,8 +3,8 @@ import axios from "axios";
 import { AttentionSeeker } from "react-awesome-reveal";
 import toast from "react-hot-toast";
 import { Fireworks } from "@fireworks-js/react";
-import BgNightsky from "../../images/bg-nightsky.png";
 import Image from "next/image";
+import winkFace from "../../images/wink-face.svg";
 
 export interface CommentForm {
   commenter: string;
@@ -12,12 +12,14 @@ export interface CommentForm {
 }
 
 export default function Comments() {
-  const [form, setForm] = useState<CommentForm>({ commenter: "", comment: "" });
-  const [textareaWidth, setTextareaWidth] = useState(30);
+  const [form, setForm] = useState<CommentForm>({ commenter: "", comment: "" }),
+    [textareaWidth, setTextareaWidth] = useState(30),
+    [winkSize, setWinkSize] = useState(40);
 
   useEffect(() => {
     if (window.outerWidth > 767) {
       setTextareaWidth(40);
+      setWinkSize(60);
     }
     const comments = document.querySelector("#comments");
     const options = { root: null, rootMargin: "0px", threshold: 0.3 };
@@ -68,9 +70,6 @@ export default function Comments() {
       className="bg-slate-900 relative opacity-0 transition-opacity duration-1000 text-white row-span-3"
     >
       <div className="flex flex-col bg-[url('../images/bg-nightsky.png')] items-center justify-evenly text-slate-300 from-black from-30% via-slate-200/30 to-white/30 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:py-4 md:gap-4 md:text-white bg-fixed bg-cover bg-center bg-no-repeat">
-        {/* <div className="absolute w-screen h-full z-0">
-        <Image src={BgNightsky} alt="Nightsky" className="cover h-5/6 w-full" />
-      </div> */}
         <Fireworks
           options={{
             rocketsPoint: {
@@ -81,18 +80,17 @@ export default function Comments() {
           className="z-10 w-screen h-64 md:h-[50vh] xl:h-64"
         />
         <div className="flex flex-col items-center gap-2 text-white md:text-white md:gap-8">
-          {/* <Flip duration={1000}> */}
-          <h2 className="font-serif text-3xl underline animate-bounce md:text-5xl">
-            Deixe um comentário!
-          </h2>
-          {/* </Flip> */}
+          <div className="font-serif text-3xl underline animate-bounce flex justify-center items-center gap-2 md:gap-8 md:text-5xl">
+            <Image src={winkFace} alt="wink-face" width={winkSize} />
+            <h2>Deixe um comentário!</h2>
+          </div>
           <p className="text-sm italic font-semibold z-0 md:font-normal text-gray-100 md:text-slate-200">
             *Leio todos
           </p>
         </div>
         <div className="flex flex-col items-center z-0 gap-2 md:flex-row md:justify-center md:gap-16 md:items-stretch">
           <div className="flex flex-col items-center gap-2 text-gray-100 md:text-slate-200 md:basis-1/3 md:px-4 md:justify-center">
-            <p className="text-sm text-center px-4">
+            <p className="text-sm text-center px-4 md:text-start md:indent-4">
               E aí, quer me conhecer melhor? &#128521; Deixe-me sugestões,
               dicas, stacks e tecnologias úteis, enfim,{" "}
               <span className="font-semibold underline text-white md:text-white">
@@ -123,7 +121,22 @@ export default function Comments() {
             className="flex flex-col items-center justify-center gap-4 text-slate-700 md:basis-1/3"
           >
             <div className="flex flex-col gap-1">
-              <label htmlFor="commenter" className="text-center text-slate-200">
+              <label
+                htmlFor="commenter"
+                className="text-center text-slate-200 flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                    clipRule="evenodd"
+                  />
+                </svg>
                 Seu nome ou identificação:
               </label>
               <input
@@ -137,7 +150,22 @@ export default function Comments() {
               ></input>
             </div>
             <div className="flex flex-col gap-1">
-              <label htmlFor="comment" className="text-center text-slate-200">
+              <label
+                htmlFor="comment"
+                className="text-center text-slate-200 flex justify-center items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
                 Comentário:
               </label>
               <textarea
