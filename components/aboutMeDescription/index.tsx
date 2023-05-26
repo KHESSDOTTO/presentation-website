@@ -80,7 +80,7 @@ export default function AboutMeDescription() {
               target="_blank"
               className="text-sm text-blue-800 L-Affiliate-Tagged"
             >
-              Acessar portfolio
+              Acessar portfolio.
             </a>
           </li>
           <li className="flex flex-row gap-2 justify-start items-center">
