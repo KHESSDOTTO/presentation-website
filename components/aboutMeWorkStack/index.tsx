@@ -1,13 +1,7 @@
 import Image from "next/image";
 import imgConstruction from "../../images/construction.jpeg";
 import { useState, useEffect } from "react";
-import {
-  Bounce,
-  Slide,
-  Roll,
-  Fade,
-  AttentionSeeker,
-} from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 
 export default function AboutMeWorkStack() {
   const [windowWidth, setWindowWidth] = useState(0);
