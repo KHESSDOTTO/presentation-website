@@ -43,7 +43,7 @@ export default function ApiHere() {
     >
       <Slide
         direction="down"
-        duration={1200}
+        duration={750}
         delay={200}
         className="self-start md:self-center"
       >

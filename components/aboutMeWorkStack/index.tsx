@@ -1,13 +1,7 @@
 import Image from "next/image";
 import imgConstruction from "../../images/construction.jpeg";
 import { useState, useEffect } from "react";
-import {
-  Bounce,
-  Slide,
-  Roll,
-  Fade,
-  AttentionSeeker,
-} from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 
 export default function AboutMeWorkStack() {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -24,7 +18,7 @@ export default function AboutMeWorkStack() {
           direction="left"
           className="col-start-2 col-end-8"
         >
-          <div className="grid grid-cols-12 px-6 shadow-md shadow-indigo-900 pb-6 bg-gradient-to-b from-white/70 to-white/10 mx-2 md:bg-gradient-to-l md:to-white/80">
+          <div className="grid grid-cols-12 px-6 shadow-lg shadow-indigo-900 pb-6 bg-gradient-to-b from-white/70 to-white/10 mx-2 md:bg-gradient-to-l md:to-white/80 md:rounded-lg">
             <h3 className="col-span-12 text-3xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -26,7 +26,7 @@ export default function AboutMeCurrStack() {
           duration={750}
           className="md:col-start-2 md:col-end-8"
         >
-          <div className="grid grid-cols-12 shadow-lg shadow-green-900 px-6 pb-6 bg-gradient-to-b from-white/90 to-white/10 md:gap-0 md:to-white/50">
+          <div className="grid grid-cols-12 shadow-lg shadow-green-900 px-6 pb-6 bg-gradient-to-b from-white/90 to-white/10 md:gap-0 md:to-white/50 md:rounded-lg">
             <h3 className="col-span-12 text-4xl font-semibold text-green-900 flex flex-row gap-2 items-center justify-start py-8 underline underline-offset-4 md:py-4 md:text-3xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
