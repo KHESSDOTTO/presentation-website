@@ -7,6 +7,7 @@ function FadeLeftComp() {
   const [toRender, setToRender] = useState<JSX.Element>(<div></div>);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const welcome = document.querySelector("#welcomeToMyWorld");
     const options = { root: null, rootMargin: "0px", threshold: 0.3 };
     const toggleOpacity = (entries: IntersectionObserverEntry[]) => {

@@ -14,7 +14,7 @@ export interface CommentForm {
 export default function Comments() {
   const [form, setForm] = useState<CommentForm>({ commenter: "", comment: "" }),
     [textareaWidth, setTextareaWidth] = useState(30),
-    [winkSize, setWinkSize] = useState(40);
+    [winkSize, setWinkSize] = useState(30);
 
   useEffect(() => {
     if (window.outerWidth > 767) {
