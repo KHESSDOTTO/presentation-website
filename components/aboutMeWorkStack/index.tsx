@@ -2,21 +2,63 @@ import Image from "next/image";
 import imgConstruction from "../../images/construction.jpeg";
 import { useState, useEffect } from "react";
 import { Slide, Fade } from "react-awesome-reveal";
+import { LiWithLogo, stackList } from "../smallComp/liWithLogo";
+import sassLogo from "../../images/sass-logo.svg";
+import reactLogo from "../../images/react-logo.svg";
+import jestLogo from "../../images/jest-logo.svg";
+import sqlLogo from "../../images/sql-logo.svg";
+import postgreSqlLogo from "../../images/postgresql-logo.svg";
+import mySqlLogo from "../../images/mysql-logo.svg";
 
 export default function AboutMeWorkStack() {
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState<number>(0),
+    [imgAfter, setImgAfter] = useState<boolean>(true);
+
+  const workStackFront: stackList[] = [
+      { text: "SASS", imgLogo: sassLogo },
+      { text: "React Native", imgLogo: reactLogo },
+      { text: "Jest", imgLogo: jestLogo },
+    ],
+    workStackBack: stackList[] = [
+      { text: "SQL", imgLogo: sqlLogo },
+      { text: "PostgreSQL", imgLogo: postgreSqlLogo },
+      { text: "MySQL", imgLogo: mySqlLogo },
+    ];
+
+  const imgSize = 20;
 
   useEffect(() => {
     setWindowWidth(window.outerWidth);
+    if (window.outerWidth > 767) {
+      setImgAfter(false);
+    }
   }, []);
+
+  const imgElement = (
+    <div className="md:flex md:justify-center md:items-center md:p-6 md:shadow-md md:shadow-black md:bg-transparent md:rounded-md md:col-start-1 md:col-end-6">
+      <Image
+        src={imgConstruction}
+        alt="Construction"
+        width={windowWidth}
+        className="col-span-12 border-gray-300 border-2 md:hidden"
+      />
+      <Image
+        src={imgConstruction}
+        alt="Construction"
+        width={450}
+        className="hidden col-span-12 border-gray-500 border-2 shadow-black shadow-lg md:rounded-md md:inline-block"
+      />
+    </div>
+  );
 
   return (
     <Fade duration={1000}>
-      <article className="flex flex-col px-2 text-indigo-900 gap-10 md:grid md:grid-cols-12 md:items-center md:py-12">
+      <article className="flex flex-col px-2 text-indigo-900 gap-10 md:grid md:grid-cols-12 md:items-center md:py-12 md:px-16">
+        {!imgAfter && imgElement}
         <Slide
           duration={750}
           direction="left"
-          className="col-start-2 col-end-8"
+          className="col-start-2 col-end-8 md:col-start-6 md:col-end-13"
         >
           <div className="grid grid-cols-12 px-6 shadow-lg shadow-indigo-900 pb-6 bg-gradient-to-b from-white/70 to-white/10 mx-2 md:bg-gradient-to-l md:to-white/80 md:rounded-lg">
             <h3 className="col-span-12 text-3xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4">
@@ -56,9 +98,15 @@ export default function AboutMeWorkStack() {
                 </h4>
               </div>
               <ul className="list-disc flex flex-col gap-2 font-semibold list-inside">
-                <li>SASS</li>
-                <li>React Native</li>
-                <li>Jest</li>
+                {workStackFront.map((e) => {
+                  return (
+                    <LiWithLogo
+                      text={e.text}
+                      imgLogo={e.imgLogo}
+                      imgSize={imgSize}
+                    />
+                  );
+                })}
               </ul>
             </div>
             <div className="col-span-6 flex flex-col gap-6">
@@ -82,29 +130,20 @@ export default function AboutMeWorkStack() {
                 </h4>
               </div>
               <ul className="list-disc flex flex-col gap-2 font-semibold list-inside">
-                <li>SQL</li>
-                <li>
-                  <span>PostgreSQL</span>
-                  <span className="text-xs block ml-6">*(neste site!)</span>
-                </li>
+                {workStackBack.map((e) => {
+                  return (
+                    <LiWithLogo
+                      text={e.text}
+                      imgLogo={e.imgLogo}
+                      imgSize={imgSize}
+                    />
+                  );
+                })}
               </ul>
             </div>
           </div>
         </Slide>
-        <div className="md:flex md:justify-center md:items-center md:p-6 md:shadow-md md:shadow-black md:bg-transparent md:rounded-md md:col-start-8 md:col-end-12">
-          <Image
-            src={imgConstruction}
-            alt="Construction"
-            width={windowWidth}
-            className="col-span-12 border-gray-300 border-2 md:hidden"
-          />
-          <Image
-            src={imgConstruction}
-            alt="Construction"
-            width={450}
-            className="hidden col-span-12 border-gray-500 border-2 shadow-black shadow-lg md:rounded-md md:inline-block"
-          />
-        </div>
+        {imgAfter && imgElement}
       </article>
     </Fade>
   );

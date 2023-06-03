@@ -14,9 +14,10 @@ export default function AboutMeDescription() {
           Quem sou eu?
         </h3>
         <p>
-          Sou apaixonado por tecnologia, lógica e matemática. Adoro consertar e
-          criar coisas novas! Acredito que a tecnologia tem uma enorme
-          capacidade para trazer benefícios à sociedade e às pessoas em geral.
+          Sou apaixonado por tecnologia, estética, lógica e matemática. Adoro
+          consertar e criar coisas novas! Acredito que a tecnologia tem uma
+          enorme capacidade para trazer benefícios à sociedade e às pessoas em
+          geral.
         </p>
       </div>
       <div className=" md:h-5/6 border-b-2 py-8 border-black md:basis-1/3 md:flex md:flex-col md:px-10 md:border-b-0">

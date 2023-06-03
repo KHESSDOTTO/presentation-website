@@ -25,7 +25,7 @@ function FadeLeftComp() {
 
     setToRender(
       <Fade direction="left" delay={700} duration={800}>
-        <div className="mt-8 flex flex-col items-center gap-6 mx-8 h-full bg-slate-400/50 p-6 rounded-2xl shadow-lg shadow-black mb-2 md:grid md:grid-cols-12 md:rounded-lg">
+        <div className="mt-8 flex flex-col items-center gap-6 mx-8 h-full bg-slate-400/90 p-6 rounded-2xl shadow-lg shadow-black mb-2 md:grid md:grid-cols-12 md:rounded-lg">
           <div className="hidden md:col-span-4 md:grid md:grid-cols-4">
             <span className="text-gray-600 italic col-span-1 text-sm text-top text-center px-4 pt-8 md:block">
               Khess:
@@ -82,7 +82,10 @@ export default function WelcomeToMyWorld() {
       className={`relative opacity-0 transition-opacity duration-[2000ms] bg-gradient-to-b from-white from-10% to-gray-300 py-8 min-h-screen flex flex-col gap-4 items-center justify-center md:pb-24 md:grid md:grid-rows-2 md:pt-20 md:h-[120vh] md:bg-[url("../images/bg-clouds.png")] md:bg-cover md:bg-center md:bg-no-repeat md:bg-fixed`}
     >
       <FadeLeftComp />
-      <h1 className="z-10 hidden font-['Great_Vibes'] text-8xl mt-12 justify-end mx-16 flex-row items-center gap-4 text-gray-800 stroke-black md:flex md:row-span-2">
+      <h1
+        style={{ textShadow: "2px 2px 4px black" }}
+        className="z-10 hidden font-['Great_Vibes'] text-8xl mt-12 justify-end mx-16 flex-row items-center gap-4 text-white md:flex md:row-span-2"
+      >
         Khess Santomauro Dotto{" "}
       </h1>
     </section>
