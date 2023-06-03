@@ -1,14 +1,14 @@
-## My presentation site
+## Meu site de Apresentação
 
-Hello!
+Olá!
 
-I am Khess. A web developer looking for constant improvement.
+Sou o Khess. Desenvolvedor web sempre em busca de melhorias.
 
-Here is the my presentation website (mobile first).
+Esse é meu primeiro site de apresentação (mobile first).
 
-Feel free to contact me throw the website (comment section), or directly on +55 (11) 94761-5365 and social medias.
+Fique à vontade para falar comigo através do site (comentários ou contatos), ou diretamente em +55 (11) 94761-5365 and mídias sociais.
 
-I am always open to suggestions and meetings :wink:
+Estou sempre disponível para sugestões e calls :wink:
 
 ## Social media/Links:
 
