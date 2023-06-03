@@ -61,7 +61,7 @@ export default function AboutMeWorkStack() {
           className="col-start-2 col-end-8 md:col-start-6 md:col-end-13"
         >
           <div className="grid grid-cols-12 px-6 shadow-lg shadow-indigo-900 pb-6 bg-gradient-to-b from-white/70 to-white/10 mx-2 md:bg-gradient-to-l md:to-white/80 md:rounded-lg">
-            <h3 className="col-span-12 text-3xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4">
+            <h3 className="col-span-12 text-2xl font-semibold flex flex-row gap-4 items-center justify-start py-8 underline underline-offset-4 md:text-3xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -93,11 +93,11 @@ export default function AboutMeWorkStack() {
                     d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
                   />
                 </svg>
-                <h4 className="text-2xl font-semibold text-indigo-900 underline decoration-wavy">
+                <h4 className="text-xl font-semibold text-indigo-900 underline decoration-wavy md:text-2xl">
                   Front-end:
                 </h4>
               </div>
-              <ul className="list-disc flex flex-col gap-2 font-semibold list-inside">
+              <ul className="list-disc flex flex-col gap-2 font-semibold list-inside text-sm md:text-base">
                 {workStackFront.map((e) => {
                   return (
                     <LiWithLogo
@@ -125,11 +125,11 @@ export default function AboutMeWorkStack() {
                     d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
                   />
                 </svg>
-                <h4 className="text-2xl font-semibold text-indigo-900 underline decoration-wavy">
+                <h4 className="text-xl font-semibold text-indigo-900 underline decoration-wavy md:text-2xl">
                   Back-end:
                 </h4>
               </div>
-              <ul className="list-disc flex flex-col gap-2 font-semibold list-inside">
+              <ul className="list-disc text-sm flex flex-col gap-2 font-semibold list-inside md:text-base">
                 {workStackBack.map((e) => {
                   return (
                     <LiWithLogo
