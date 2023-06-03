@@ -69,7 +69,7 @@ export default function Comments() {
       id="comments"
       className="bg-slate-900 relative opacity-0 transition-opacity duration-1000 text-white row-span-3"
     >
-      <div className="flex flex-col bg-[url('../images/bg-nightsky.png')] items-center justify-evenly text-slate-300 from-black from-30% via-slate-200/30 to-white/30 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:py-4 md:gap-4 md:text-white bg-fixed bg-cover bg-center bg-no-repeat">
+      <div className="flex flex-col bg-[url('../images/bg-nightsky.png')] items-center justify-evenly text-slate-300 shadow-lg pt-8 pb-6 max-w-screen gap-0 md:py-4 md:gap-4 md:text-white bg-fixed bg-cover bg-center bg-no-repeat">
         <Fireworks
           options={{
             rocketsPoint: {

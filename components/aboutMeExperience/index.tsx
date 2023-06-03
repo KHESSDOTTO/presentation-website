@@ -27,6 +27,7 @@ export default function AboutMeExperience() {
       especificamente com desenvolvimento web. Quer saber mais? Me chame\
       e vamos conversar!!! Meus contatos estão ao final (rodapé).",
     obs = "*Obs: Inglês avançado.",
+    listP = [firstP, secondP, thirdP, fourthP, obs],
     wholeText =
       firstP + " " + secondP + " " + thirdP + " " + fourthP + " " + obs;
 
@@ -59,10 +60,13 @@ export default function AboutMeExperience() {
             <h3>Minha história/experiência</h3>
           </div>
           <div className="flex flex-col gap-4 text-sm leading-relaxed indent-4 text-justify md:text-md md:leading-5 xl:px-12">
-            <p>
+            {/* <p>
               {displayedResponse}
               {!finishedTyping && <FlashingCursorSVG />}
-            </p>
+            </p> */}
+            {listP.map((cE) => {
+              return <p>{cE}</p>;
+            })}
           </div>
         </div>
       </article>
