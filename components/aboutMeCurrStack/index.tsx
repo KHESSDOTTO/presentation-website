@@ -97,7 +97,7 @@ export default function AboutMeCurrStack() {
                     Front-end:
                   </h4>
                 </div>
-                <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-0 md:text-sm">
+                <ul className="list-disc text-sm flex flex-col gap-2 font-semibold list-inside md:gap-0">
                   {currStackFront.map((e) => {
                     return (
                       <LiWithLogo
@@ -129,7 +129,7 @@ export default function AboutMeCurrStack() {
                     Back-end:
                   </h4>
                 </div>
-                <ul className="list-disc flex flex-col gap-2 font-semibold list-inside md:gap-0 md:text-sm">
+                <ul className="list-disc text-sm flex flex-col gap-2 font-semibold list-inside md:gap-0">
                   {currStackBack.map((e) => {
                     return (
                       <LiWithLogo
