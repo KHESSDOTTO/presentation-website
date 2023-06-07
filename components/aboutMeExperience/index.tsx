@@ -9,7 +9,7 @@ export default function AboutMeExperience() {
   const firstP =
       "Comecei minha carreira no mercado financeiro com uma oportunidade que recebi através da minha faculdade (FGV)! \
       Apesar de possuir um perfil naturalmente mais analítico, neste mercado, desenvolvi bastante o meu lado comunicativo. \
-      Infelizmente, não era onde eu gostaria de construir a minha carreira...",
+      Infelizmente, por tratar-se de uma área predominantemente comercial, entendi que não era onde eu gostaria de construir a minha carreira...",
     secondP =
       "Em meus estudos, fiz um curso de VBA para automatizar processos\
       manuais que tínhamos no banco. Pelos próximos 2 anos, mantive\
